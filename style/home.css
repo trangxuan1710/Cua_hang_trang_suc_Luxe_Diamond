@@ -9,7 +9,7 @@
 body {
     line-height: 1.6;
     color: #e2c393;
-    background-color: #484848;
+    background-color: #000000; /*#484848*/
     background-image: url("../img/bg.jpg");
 }
 
@@ -30,7 +30,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
-    background: #fff;
+    background: #000000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
 }
@@ -86,12 +86,12 @@ body {
 #cart-count {
     position: absolute;
     top: -5px;
-    right: -10px;
+    right: -5px;
     background: red;
     color: white;
-    font-size: 12px;
-    padding: 2px 5px;
-    border-radius: 50%;
+    font-size: 10px;
+    padding: 2px 2px;
+    border-radius: 100%;
 }
 
 .header .logo {
@@ -116,7 +116,7 @@ body {
 
 .header .nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     font-size: 20px;
     transition: color 0.3s;
 }
@@ -138,7 +138,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #fff;
+  background: #000000;
   display: none;
   padding: 20px 30px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -190,7 +190,7 @@ body {
     left: 0;
     height: 0.5px;
     width: 0;
-    background-color: #000; /* đổi màu nếu muốn */
+    background-color: #e2c393; /* đổi màu nếu muốn */
     transition: width 0.3s ease;
   }
   
@@ -209,7 +209,10 @@ body {
 
 .banner img {
     width: 100%;
+    max-width: 100%;
     height: auto;
+    min-height: 40vh;
+    display: block;
 }
 
 .banner-text {
@@ -383,4 +386,8 @@ body {
 .footer-bottom {
     text-align: center;
     font-size: 14px;
+}
+
+.footer-content ul li a:hover {
+    color: #c19b76;
 }
