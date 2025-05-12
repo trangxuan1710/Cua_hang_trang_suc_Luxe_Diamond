@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Diamond - Trang sức kim cương cao cấp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/home.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="style/image/LogoLuxeDiamond.png" alt="LogoLuxeDiamond">
+        </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                      <div class="menu-columns">
+                        <div class="column">
+                            <a href="sản phẩm/BST.html" class="underline-hover">Bộ sưu tập</a>                          
+                            <a href="khuyentai.html" class="underline-hover">Khuyên tai</a>
+                            <a href="nhan.html" class="underline-hover">Nhẫn</a>
+                            <a href="Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                            <a href="sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                            <a href="vongcong.html" class="underline-hover">Vòng cổ</a>
+                            <a href="vongtay.html" class="underline-hover">Vòng tay</a>
+                  </li>
+                <li class="dropdown">
+                    <a href="gioithieu.html" class="underline-hover">Giới thiệu</a>
+                </li>
+                <li><a href="Tintuc.html" class="underline-hover">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="#" class="icon" onclick="openAccount()">
+                <img src="style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="#" class="icon" onclick="openCart()">
+                <img src="style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <img src="style/image/BGhero.png" alt="Luxe Diamond Banner">
+        <div class="banner-text">
+            <h1>LUXE DIAMOND'S NEW COLLECTION</h1>
+            <a href="sản phẩm/sanphammoi.html" class="btn">Khám phá ngay</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <div class="about-text">
+            <h2>Luxe Diamond</h2>
+            <p>Luxe Diamond không chỉ là trang sức mà còn là Nghệ thuật và tinh hoa Thiết kế.<br><br>
+            Trang sức của chúng tôi được lấy cảm hứng từ những hình dạng và câu chuyện phổ quát trải dài qua nhiều thế hệ và nền văn hóa.<br><br>
+            Các hình thức điều khắc, những đường cong mềm mại và những đường nét uyển chuyển tạo nên vẻ sáng trong dễ dàng cho những nhà sáng tạo táo bạo, tự do.</p>
+            <br><a href="gioithieu.html" class="btn">Tìm hiểu về chúng tôi</a>
+        </div>
+        <div class="about-img">
+            <img src="style/image/anhabout.jpg" alt="About Luxe Diamond">
+        </div>
+    </section>
+
+    <!-- Collection -->
+    <section class="collection">
+        <h2>Bộ Sưu Tập</h2>
+        <div class="collection-items">
+            <div class="item">
+                <img src="style/image/bongtai.png" style="width: 250px; height: 250px;" alt="Khuyên tai">
+                <h3><a href="sản phẩm/khuyentai.html" class="collection-item-title">Khuyên tai</a></h3>
+            </div>
+            <div class="item">
+                <img src="style/image/vongco.jpg" style="width: 250px; height: 250px;" alt="Vòng cổ">
+                <h3><a href="sản phẩm/vongco.html" class="collection-item-title">Vòng cổ</a></h3>
+            </div>
+            <div class="item">
+                <img src="style/image/nhankimcuong.png" style="width: 250px; height: 250px;" alt="Nhẫn">
+                <h3><a href="sản phẩm/nhan.html" class="collection-item-title">Nhẫn</a></h3>
+            </div>
+            <div class="item">
+                <img src="style/image/vongtay.jpg" style="width: 250px; height: 250px;" alt="Vòng tay">
+                <h3><a href="sản phẩm/Vongtay.html" class="collection-item-title">Vòng tay</a></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Luxe Diamond</h3>
+                <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+                <p>Điện thoại: 19001393</p>
+                <p>Email: cskh@luxediamond.com</p>
+            </div>
+            <div class="footer-policy">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#" class="underline-hover">Bảo hành sản phẩm</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách bán hàng</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách giao hàng</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#" class="underline-hover">Điều khoản dịch vụ</a></li>
+                    <li><a href="#" class="underline-hover">Hệ thống cửa hàng</a></li>
+                    <li><a href="#" class="underline-hover">Câu hỏi thường gặp</a></li>
+                    <li><a href="#" class="underline-hover">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+        </div>
+    </footer>
+</body>
+</html>
