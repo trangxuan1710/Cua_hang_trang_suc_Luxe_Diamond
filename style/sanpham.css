@@ -250,6 +250,32 @@ body {
       font-size: 15px;
       margin-top: 5px;
     }
+/* Định dạng liên kết trong phần sản phẩm */
+.products .product a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #333; /* Màu chữ mặc định */
+    transition: color 0.3s ease, transform 0.2s ease; /* Hiệu ứng khi hover */
+}
+
+.products .product a:hover {
+    color: #e63946; /* Màu đỏ nổi bật khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+/* Định dạng tiêu đề sản phẩm */
+.products .product h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Định dạng giá sản phẩm */
+.products .product .price {
+    color: #e63946; /* Màu đỏ nổi bật */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
 
     /* Footer */
 .footer {
