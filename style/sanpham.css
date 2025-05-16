@@ -231,6 +231,8 @@ body {
       width: 22%;
       background-color: #fff;
       padding: 30px;
+      border-radius: 30px;
+      transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
     }
 
     .product img {
@@ -240,10 +242,6 @@ body {
       object-fit: contain;
     }
 
-    .product h3 {
-      font-weight: bold;
-      margin-top: 10px;
-    }
 
 /* Định dạng liên kết trong phần sản phẩm */
 .products .product a {
@@ -252,9 +250,9 @@ body {
     transition: color 0.3s ease, transform 0.2s ease; /* Hiệu ứng khi hover */
 }
 
-.products .product a:hover {
-    color: #e63946; /* Màu đỏ nổi bật khi hover */
-    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+.product:hover {
+  transform: scale(1.05); /* Nổi lên 5px */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
 }
 
 /* Định dạng tiêu đề sản phẩm */
