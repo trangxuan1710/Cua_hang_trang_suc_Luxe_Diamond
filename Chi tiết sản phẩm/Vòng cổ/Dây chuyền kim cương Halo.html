@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/chitietsp.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="../../index.html">
+                <img src="../../style/image/LogoLuxeDiamond.png" alt="Logo Luxe Diamond">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../../index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                        <div class="menu-columns">
+                            <div class="column">
+                                <a href="../../sản phẩm/BST.html" class="underline-hover">Bộ sưu tập</a>
+                                <a href="../../sản phẩm/khuyentai.html" class="underline-hover">Khuyên tai</a>
+                                <a href="../../sản phẩm/nhan.html" class="underline-hover">Nhẫn</a>
+                                <a href="../../sản phẩm/Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                                <a href="../../sản phẩm/sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                                <a href="../../sản phẩm/vongco.html" class="underline-hover">Vòng cổ</a>
+                                <a href="../../sản phẩm/vongtay.html" class="underline-hover">Vòng tay</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../../gioithieu.html" class="underline-hover">Giới thiệu</a></li>
+                <li><a href="../../Tintuc.html" class="underline-hover">Tin tức</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="../../style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="#" class="icon" onclick="openAccount()">
+                <img src="../../style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="#" class="icon" onclick="openCart()">
+                <img src="../../style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <div class="menu">
+        <a href="../../index.html">Trang Chủ</a> / 
+        Sản phẩm/ 
+        <a href="../../sản phẩm/vongco.html">Vòng cổ</a> / 
+        <a href="Dây chuyền kim cương Halo.html">Dây chuyền kim cương Halo</a>
+    </div>
+    <div class="container">
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="../../images/Vongco/halo.jpg" alt="Thumbnail 1">
+            <img class="thumbnail" src="../../images/Vongco/halo1.jpg" alt="Thumbnail 2">   
+        </div>
+        <div class="image-container">
+            <img id="main-image" src="../../images/Vongco/halo.jpg" alt="Dây chuyền kim cương Halo">
+        </div>
+        <div class="details">
+            <h1>Dây chuyền kim cương Halo</h1>
+            <h2 class="price">8.700.000 VNĐ</h2>
+            <p><strong>Loại kim loại:</strong> Vàng 14K, Vàng 18K, Bạch kim Pt950</p>
+            <p><strong>Màu sắc: </strong> Vàng, Trắng, Hồng</p>
+            <p><strong>Loại đá: </strong> Kim cương tự nhiên</p>
+            <p><strong>Kiểu dáng viên chủ: </strong> Hình tròn</p>
+            <p><strong>Cân nặng viên chủ: </strong> 0.50 ct</p>
+            <p><strong>Màu sắc viên chủ / độ rõ: </strong> GH/VS-SI</p>
+            <p><strong>Kiểu dáng viên phụ (s): </strong> Hình tròn</p>
+            <p><strong>Số lượng viên phụ: </strong> 12 Viên</p>
+            <p><strong>Cân nặng (s) Stone (S): </strong>0.16 ct</p>
+            <p><strong>Độ dài: </strong>40cm+5cm</p>
+        
+            <div class="quantity-control">
+                <button id="decrease">-</button>
+                <input id="quantity" type="number" value="1" min="1">
+                <button id="increase">+</button>
+            </div>
+            <button class="add-to-cart">THÊM VÀO GIỎ HÀNG</button>
+            <button class="contact">LIÊN HỆ TƯ VẤN</button>
+            <p class="note">* Giá trên đây là giá tham khảo theo thông số tiêu chuẩn. </p>
+        </div>
+    </div>
+    <!-- Popup thêm vào giỏ hàng -->
+<div id="cart-popup">
+    <h3>Thêm vào giỏ hàng thành công!</h3>
+    <button onclick="closePopup()">Đóng</button>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Luxe Diamond</h3>
+                <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+                <p>Điện thoại: 19001393</p>
+                <p>Email: cskh@luxediamond.com</p>
+            </div>
+            <div class="footer-policy">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="../../baohanh.html" class="underline-hover">Bảo hành sản phẩm</a></li>
+                    <li><a href="../../chinhsachbanhang.html" class="underline-hover">Chính sách bán hàng</a></li>
+                    <li><a href="../../chinhsachgiaohang.html" class="underline-hover">Chính sách giao hàng</a></li>
+                    <li><a href="../../chinhsachdoitra.html" class="underline-hover">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="../../dieu-khoan.html" class="underline-hover">Điều khoản dịch vụ</a></li>
+                    <li><a href="../../hethongcuahang.html" class="underline-hover">Hệ thống cửa hàng</a></li>
+                    <li><a href="../../faq.html" class="underline-hover">Câu hỏi thường gặp</a></li>
+                    <li><a href="../../lienhe.html" class="underline-hover">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+        </div>
+    </footer>
+    <script>
+
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('main-image');
+    
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                mainImage.src = thumbnail.src; // Đổi ảnh chính thành ảnh được click
+            });
+        });
+    </script>
+    <script>
+        const decreaseButton = document.getElementById('decrease');
+        const increaseButton = document.getElementById('increase');
+        const quantityInput = document.getElementById('quantity');
+    
+        // Giảm số lượng
+        decreaseButton.addEventListener('click', () => {
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue > 1) {
+                quantityInput.value = currentValue - 1;
+            }
+        });
+    
+        // Tăng số lượng
+        increaseButton.addEventListener('click', () => {
+            let currentValue = parseInt(quantityInput.value);
+            quantityInput.value = currentValue + 1;
+        });
+    </script>
+    <script>
+        const addToCartButton = document.querySelector('.add-to-cart');
+        const cartPopup = document.getElementById('cart-popup');
+    
+        // Hiển thị popup khi nhấn "THÊM VÀO GIỎ HÀNG"
+        addToCartButton.addEventListener('click', () => {
+            cartPopup.style.display = 'block';
+            setTimeout(() => {
+                cartPopup.style.display = 'none';
+            }, 3000); // Tự động ẩn popup sau 3 giây
+        });
+    
+        // Đóng popup khi nhấn nút "Đóng"
+        function closePopup() {
+            cartPopup.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
