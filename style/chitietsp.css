@@ -428,6 +428,26 @@ button.contact:hover {
     font-weight: bold;
     font-size: 24px; /* Tăng kích thước chữ */
 }
+.phanloai-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.phanloai-buttons button {
+    padding: 6px 16px;
+    background: #e2c393;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.phanloai-buttons button:hover {
+    background: #c19b76;
+}
     /* Footer */
 .footer {
     color: #000;
