@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/sanpham.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../style/image/LogoLuxeDiamond.png" alt="LogoLuxeDiamond">
+        </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                      <div class="menu-columns">
+                        <div class="column">
+                            <a href="BST.html" class="underline-hover">Bộ sưu tập</a>                          
+                            <a href="khuyentai.html" class="underline-hover">Khuyên tai</a>
+                            <a href="nhan.html" class="underline-hover">Nhẫn</a>
+                            <a href="Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                            <a href="sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                            <a href="vongco.html" class="underline-hover">Vòng cổ</a>
+                            <a href="vongtay.html" class="underline-hover">Vòng tay</a>
+                  </li>
+                <li class="dropdown">
+                    <a href="../gioithieu.html" class="underline-hover">Giới thiệu</a>
+                </li>
+                <li><a href="../Tintuc.html" class="underline-hover">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="../style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="#" class="icon" onclick="openAccount()">
+                <img src="../style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="#" class="icon" onclick="openCart()">
+                <img src="../style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    <div class="menu">
+        <a href="../index.html">Trang Chủ</a>/ Sản phẩm / <a href="sanphambanchay.html">Sản phẩm bán chạy</a>
+    </div>
+    <div class="products">
+        <div class="product">
+            <a href="../Chi tiết sản phẩm/Sản phẩm bán chạy/Nhẫn Cưới Elation.html">
+                <img src="../images/sanphambanchay/Nhan-doi-kim-cuong-ND090-ND091-1536x1536.jpg" alt="Mặt Dây Chuyền Kim Cương MDC284">
+                <h3>Nhẫn Cưới Elation</h3>
+            </a>
+            <p class="price">17.800.000 - 37.300.000 VNĐ</p>
+        </div>
+        <div class="product">
+            <a href="../Chi tiết sản phẩm/Sản phẩm bán chạy/Nhẫn Cưới Regal.html">
+                <img src="../images/sanphambanchay/Nhan-doi-kim-cuong-ND094-ND095-1536x1536.jpg" alt="Nhẫn Cưới Symphony">
+                <h3>Nhẫn Cưới Regal</h3>
+            </a>
+            <p class="price">22.800.000 - 48.600.000 VNĐ</p>
+        </div>
+        <div class="product">
+            <a href="../Chi tiết sản phẩm/Sản phẩm bán chạy/Bông Tai Kim Cương BT066.html">
+                <img src="../images/sanphambanchay/Bong-tai-dinh-kim-cuong-BT066-1536x1536.jpg" alt="Nhẫn Kim Cương Mặt Tròn NU155">
+                <h3>Bông Tai Kim Cương BT066</h3>
+            </a>
+            <p class="price">29.900.000 VNĐ</p>
+        </div>
+        <div class="product">
+            <a href="../Chi tiết sản phẩm/Sản phẩm bán chạy/Vòng Tay Kim Cương Dazzling Swan VT126.html">
+                <img src="../images/sanphambanchay/Vong-tay-kim-cuong-Dazzling-Swan-VT126.jpg" alt="Nhẫn Kim Cương Nữ VNU220">
+                <h3>Vòng Tay Kim Cương Dazzling Swan VT126</h3>
+            </a>
+            <p class="price">40.800.000 VNĐ</p>
+        </div>
+        <div class="product">
+            <a href="../Chi tiết sản phẩm/Sản phẩm bán chạy/Vòng Tay Kim Cương VT128.html">
+                <img src="../images/sanphambanchay/Vong-tay-kim-cuong-VT128.jpg" alt="Vong-tay-kim-cuong-Enchanted-VT125">
+                <h3>Vòng Tay Kim Cương VT128</h3>
+            </a>
+            <p class="price">18.200.000 VNĐ</p>
+        </div>
+        <div class="product">
+            <a href="../Chi tiết sản phẩm/Sản phẩm bán chạy/Mặt Dây Chuyền Kim Cương Thiên Nga MDC318.html">
+                <img src="../images/sanphambanchay/Mat-day-chuyen-thien-nga-MDC318.jpg" alt="Vòng Tay Kim Cương VT027">
+                <h3>Mặt Dây Chuyền Kim Cương Thiên Nga MDC318</h3>
+            </a>
+            <p class="price">23.800.000 VNĐ</p>
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Luxe Diamond</h3>
+                <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+                <p>Điện thoại: 19001393</p>
+                <p>Email: cskh@luxediamond.com</p>
+            </div>
+            <div class="footer-policy">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#" class="underline-hover">Bảo hành sản phẩm</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách bán hàng</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách giao hàng</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#" class="underline-hover">Điều khoản dịch vụ</a></li>
+                    <li><a href="#" class="underline-hover">Hệ thống cửa hàng</a></li>
+                    <li><a href="#" class="underline-hover">Câu hỏi thường gặp</a></li>
+                    <li><a href="#" class="underline-hover">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+        </div>
+    </footer>
+</body>
+</html>
