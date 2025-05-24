@@ -80,17 +80,6 @@ body {
     height: 24px;
 }
 
-#cart-count {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: red;
-    color: white;
-    font-size: 10px;
-    padding: 2px 2px;
-    border-radius: 100%;
-}
-
 .header .logo {
     font-size: 28px;
     font-weight: bold;
@@ -137,6 +126,7 @@ body {
   left: 0;
   background: #000000;
   display: none;
+  flex-direction: column;
   padding: 20px 30px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   z-index: 999;
@@ -144,33 +134,40 @@ body {
   min-width: 300px;
 }
 
+.submenu {
+position: absolute;
+    top: -10px; 
+    left: 95%; /* Quan trọng: Đặt ngay bên phải mục cha cấp 2 */
+    display: flex; /* Dùng flexbox để sắp xếp ngang */
+    flex-direction: column;
+    min-width: 230px; /* Đặt chiều rộng tối thiểu cho submenu */
+    width: auto;
+    padding: 20px;
+    background-color: black; 
+    opacity: 0;
+    visibility: hidden;
+    /* Điều chỉnh top để nó ẩn khỏi tầm nhìn ban đầu nhưng vẫn cho phép transition */ 
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.submenu a {
+    padding: 10px 15px; /* Điều chỉnh padding cho menu ngang */
+    border-color: #eee; 
+}
+
+.menu-columns:hover > .submenu {
+    display: block; /* Hiển thị dropdown */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); 
+}
+
 .menu-columns {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-}
-
-.column {
-    flex: 1;
-}
-
-.column h4 {
-  font-size: 20px;
-  font-weight: bold;    
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.column a {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #666;
-  text-decoration: none;
-}
-
-.column a:hover {
-  color: #000;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
 /* Underline */
