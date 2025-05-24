@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+<div class="neumorphic neumorphic-card">
+    <h1>Đăng nhập</h1>
+    <input type="text" class="neumorphic neumorphic-input" placeholder="Tên đăng nhập">
+    <input type="password" class="neumorphic neumorphic-input" placeholder="Mật khẩu">
+    <button class="neumorphic neumorphic-button">Đăng nhập</button>
+    <p class="neumorphic neumorphic-text">Bạn chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
+    
+</div>
+<script>
+document.querySelector('.neumorphic-button').addEventListener('click', function(e) {
+    const username = document.querySelector('input[type="text"]').value.trim();
+    const password = document.querySelector('input[type="password"]').value.trim();
+    if (!username || !password) {
+        alert('Vui lòng nhập đầy đủ Username và Password!');
+        e.preventDefault();
+    } else {
+        window.location.href = "index.html";
+    }
+});
+</script>
+</body>
+</html>

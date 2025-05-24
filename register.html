@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+<div class="neumorphic neumorphic-card">
+    <h1>Đăng ký</h1>
+    <input type="text" class="neumorphic neumorphic-input" placeholder="Tên đăng nhập">
+    <input type="password" class="neumorphic neumorphic-input" placeholder="Mật khẩu">
+    <input type="password" class="neumorphic neumorphic-input" placeholder="Nhập lại mật khẩu">
+    <button class="neumorphic neumorphic-button">Đăng ký</button>
+    <p class="neumorphic neumorphic-text">Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+</div>
+<script>
+document.querySelector('.neumorphic-button').addEventListener('click', function(e) {
+    const username = document.querySelectorAll('.neumorphic-input')[0].value.trim();
+    const password = document.querySelectorAll('.neumorphic-input')[1].value.trim();
+    const repassword = document.querySelectorAll('.neumorphic-input')[2].value.trim();
+    if (!username || !password || !repassword) {
+        alert('Vui lòng nhập đầy đủ thông tin!');
+        e.preventDefault();
+    } else if (password !== repassword) {
+        alert('Mật khẩu nhập lại không khớp!');
+        e.preventDefault();
+    } else {
+        alert('Đăng ký thành công!');
+        window.location.href = "login.html";
+    }
+});
+</script>
+</body>
+</html>
