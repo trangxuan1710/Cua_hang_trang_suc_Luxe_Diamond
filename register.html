@@ -8,27 +8,40 @@
 <div class="neumorphic neumorphic-card">
     <h1>Đăng ký</h1>
     <input type="text" class="neumorphic neumorphic-input" placeholder="Tên đăng nhập">
-    <input type="password" class="neumorphic neumorphic-input" placeholder="Mật khẩu">
-    <input type="password" class="neumorphic neumorphic-input" placeholder="Nhập lại mật khẩu">
+    <input type="password" id="password" class="neumorphic neumorphic-input" placeholder="Mật khẩu">
+    <input type="password" id="repassword" class="neumorphic neumorphic-input" placeholder="Nhập lại mật khẩu">
     <button class="neumorphic neumorphic-button">Đăng ký</button>
     <p class="neumorphic neumorphic-text">Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+    <div id="popup" class="popup" style="display:none;">
+        <div class="popup-content">
+            <p id="popup-message"></p>
+            <button onclick="closePopup()" class="neumorphic neumorphic-button">Đóng</button>
+        </div>
+    </div>
 </div>
 <script>
 document.querySelector('.neumorphic-button').addEventListener('click', function(e) {
     const username = document.querySelectorAll('.neumorphic-input')[0].value.trim();
-    const password = document.querySelectorAll('.neumorphic-input')[1].value.trim();
-    const repassword = document.querySelectorAll('.neumorphic-input')[2].value.trim();
+    const password = document.getElementById('password').value.trim();
+    const repassword = document.getElementById('repassword').value.trim();
     if (!username || !password || !repassword) {
-        alert('Vui lòng nhập đầy đủ thông tin!');
+        showPopup('Bạn chưa điền thông tin!');
         e.preventDefault();
     } else if (password !== repassword) {
-        alert('Mật khẩu nhập lại không khớp!');
+        showPopup('Mật khẩu nhập lại không khớp!');
         e.preventDefault();
     } else {
-        alert('Đăng ký thành công!');
-        window.location.href = "login.html";
+        showPopup('Đăng ký thành công!');
+        setTimeout(() => { window.location.href = "login.html"; }, 1500);
     }
 });
+function showPopup(message) {
+    document.getElementById('popup-message').innerText = message;
+    document.getElementById('popup').style.display = 'flex';
+}
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
 </script>
 </body>
 </html>

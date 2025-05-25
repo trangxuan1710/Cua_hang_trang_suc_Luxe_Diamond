@@ -15,19 +15,31 @@
     </label>
     <button class="neumorphic neumorphic-button">Đăng nhập</button>
     <p class="neumorphic neumorphic-text">Bạn chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
-    
+    <div id="popup" class="popup" style="display:none;">
+    <div class="popup-content">
+        <p id="popup-message"></p>
+        <button onclick="closePopup()" class="neumorphic neumorphic-button">Đóng</button>
+    </div>
+</div>
 </div>
 <script>
 document.querySelector('.neumorphic-button').addEventListener('click', function(e) {
     const username = document.querySelector('input[type="text"]').value.trim();
     const password = document.querySelector('input[type="password"]').value.trim();
     if (!username || !password) {
-        alert('Vui lòng nhập đầy đủ Username và Password!');
+        showPopup('Bạn chưa điền thông tin!');
         e.preventDefault();
     } else {
         window.location.href = "index.html";
     }
 });
+function showPopup(message) {
+    document.getElementById('popup-message').innerText = message;
+    document.getElementById('popup').style.display = 'flex';
+}
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
 // Hiện/ẩn mật khẩu
 document.getElementById('show-password').addEventListener('change', function() {
     const pwdInput = document.getElementById('password');
