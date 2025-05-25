@@ -484,3 +484,108 @@ button.contact:hover {
 .footer-content ul li a:hover {
     color: #c19b76;
 }
+/* Đảm bảo các phần tử co giãn linh hoạt */
+body, html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Bố cục header, nav, icon, menu, about, footer đều linh hoạt */
+.header, .footer-content, .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu, .about-text, .about-image {
+    width: 100%;
+}
+
+.about {
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 250px;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Responsive cho tablet và mobile */
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .about-image {
+        margin-top: 20px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header, .footer-content {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about-text, .about-image {
+        width: 100%;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .search-box input {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image img {
+        max-width: 220px;
+    }
+    .header-icons img,
+    .logo img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .about-text {
+        font-size: 15px;
+    }
+    .footer-content {
+        font-size: 14px;
+    }
+}
