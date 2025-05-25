@@ -8,7 +8,11 @@
 <div class="neumorphic neumorphic-card">
     <h1>Đăng nhập</h1>
     <input type="text" class="neumorphic neumorphic-input" placeholder="Tên đăng nhập">
-    <input type="password" class="neumorphic neumorphic-input" placeholder="Mật khẩu">
+    <input type="password" id="password" class="neumorphic neumorphic-input" placeholder="Mật khẩu">
+    <label style="margin: 10px 0; display: flex; align-items: center;">
+        <input type="checkbox" id="show-password" style="margin-right: 5px;">
+        Hiện mật khẩu
+    </label>
     <button class="neumorphic neumorphic-button">Đăng nhập</button>
     <p class="neumorphic neumorphic-text">Bạn chưa có tài khoản? <a href="register.html">Đăng ký</a></p>
     
@@ -23,6 +27,11 @@ document.querySelector('.neumorphic-button').addEventListener('click', function(
     } else {
         window.location.href = "index.html";
     }
+});
+// Hiện/ẩn mật khẩu
+document.getElementById('show-password').addEventListener('change', function() {
+    const pwdInput = document.getElementById('password');
+    pwdInput.type = this.checked ? 'text' : 'password';
 });
 </script>
 </body>
