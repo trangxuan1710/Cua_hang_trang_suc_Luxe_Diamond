@@ -198,15 +198,24 @@ position: absolute;
 }
 /* Banner */
 .banner {
-    position: relative;
+  position: relative;
+  overflow: hidden; /* ẩn ảnh trượt ra ngoài */
+  width: 100%;
+  height: 40vh;
 }
 
-.banner img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    min-height: 40vh;
-    display: block;
+.slider {
+  display: flex;
+  width: 100%; /* 3 ảnh */
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
 }
 
 .banner-text {
@@ -221,6 +230,8 @@ position: absolute;
 .banner-text h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color:#ffffff;
+    text-shadow: 4px 4px 9px rgba(0, 0, 0, 0.6);
 }
 
 .banner-text .btn {
