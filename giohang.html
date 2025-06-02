@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Luxe Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/giohang.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="style/image/LogoLuxeDiamond.png" alt="LogoLuxeDiamond">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                        <div class="menu-columns">
+                            <a href="#" class="underline-hover">Bộ sưu tập</a>
+                            <div class="submenu">
+                                <a href="DazzlingDiamond.html" class="underline-hover">Dazzling Diamond</a>
+                                <a href="EnchantingLove.html" class="underline-hover">Enchanting Love</a>
+                            </div>
+                        </div>
+                        <div class="menu-columns">
+                            <a href="sản phẩm/khuyentai.html" class="underline-hover">Khuyên tai</a>
+                            <a href="sản phẩm/nhan.html" class="underline-hover">Nhẫn</a>
+                            <a href="sản phẩm/Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                            <a href="sản phẩm/sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                            <a href="sản phẩm/vongco.html" class="underline-hover">Vòng cổ</a>
+                            <a href="sản phẩm/vongtay.html" class="underline-hover">Vòng tay</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="gioithieu.html" class="underline-hover">Giới thiệu</a>
+                </li>
+                <li><a href="Tintuc.html" class="underline-hover">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="login.html" class="icon">
+                <img src="style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="#" class="icon" onclick="openCart()">
+                <img src="style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+            </a>
+        </div>
+    </header>
+    <main class="cart-container">
+        <h2>GIỎ HÀNG CỦA BẠN</h2>
+
+        <div class="cart-header">
+            <div class="header-col product-col">SẢN PHẨM</div>
+            <div class="header-col price-col">GIÁ</div>
+            <div class="header-col quantity-col">SỐ LƯỢNG</div>
+            <div class="header-col total-col">TẠM TÍNH</div>
+        </div>
+
+        <div class="cart-items">
+            <div class="cart-item" data-product-id="BT009">
+                <div class="item-column product-info">
+                    <div class="item-remove">
+                        <button class="remove-btn">
+                            <span class="remove-icon">&#x2715;</span>
+                        </button>
+                    </div>
+                    <div class="item-image">
+                        <img src="images/khuyentai/Bong-tai-dinh-kim-cuong-BT009-1-1536x1536.jpg" alt="Bông tai đính kim cương BT009">
+                    </div>
+                    <div class="item-details">
+                        <h3>Bông tai đính kim cương BT009</h3>
+                        <p>Chất liệu: Kim cương</p>
+                        <p>Màu sắc: Bạc</p>
+                    </div>
+                </div>
+                <div class="item-price" data-price="17700000">17.700.000 VNĐ</div>
+                <div class="item-quantity">
+                    <div class="quantity-control">
+                        <button class="qty-btn minus">-</button>
+                        <input type="text" value="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                <div class="item-total">17.700.000 VNĐ</div>
+            </div>
+
+            <div class="cart-item" data-product-id="Aubrey">
+                <div class="item-column product-info">
+                    <div class="item-remove">
+                        <button class="remove-btn">
+                            <span class="remove-icon">&#x2715;</span>
+                        </button>
+                    </div>
+                    <div class="item-image">
+                        <img src="images/Nhan/Aubrey.jpg" alt="Nhẫn cầu hôn kim cương Aubrey">
+                    </div>
+                    <div class="item-details">
+                        <h3>Nhẫn cầu hôn kim cương Aubrey</h3>
+                        <p>Chất liệu: Kim cương</p>
+                        <p>Màu sắc: Trắng</p>
+                    </div>
+                </div>
+                <div class="item-price" data-price="17600000">17.600.000 VNĐ</div>
+                <div class="item-quantity">
+                    <div class="quantity-control">
+                        <button class="qty-btn minus">-</button>
+                        <input type="text" value="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                <div class="item-total">17.600.000 VNĐ</div>
+            </div>
+
+            <div class="cart-item" data-product-id="Cate">
+                <div class="item-column product-info">
+                    <div class="item-remove">
+                        <button class="remove-btn">
+                            <span class="remove-icon">&#x2715;</span>
+                        </button>
+                    </div>
+                    <div class="item-image">
+                        <img src="images/Vongco/cate.jpg" alt="Dây chuyền kim cương Cate">
+                    </div>
+                    <div class="item-details">
+                        <h3>Dây chuyền kim cương Cate</h3>
+                        <p>Chất liệu: Kim cương</p>
+                        <p>Màu sắc: Trắng</p>
+                    </div>
+                </div>
+                <div class="item-price" data-price="9300000">9.300.000 VNĐ</div>
+                <div class="item-quantity">
+                    <div class="quantity-control">
+                        <button class="qty-btn minus">-</button>
+                        <input type="text" value="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                <div class="item-total">9.300.000 VNĐ</div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="cart-summary-row">
+                <p>Tổng tiền sản phẩm:</p>
+                <p class="cart-subtotal">0 VNĐ</p>
+            </div>
+            <div class="cart-summary-row">
+                <p>Phí vận chuyển:</p>
+                <p>Miễn phí</p>
+            </div>
+            <div class="cart-summary-row total-row">
+                <h3>TỔNG CỘNG:</h3>
+                <h3 class="cart-grand-total">0 VNĐ</h3>
+            </div>
+        </div>
+
+        <div class="cart-footer-actions">
+            <a href="index.html"><button class="btn-continue-shopping">← TIẾP TỤC XEM SẢN PHẨM</button></a>
+            <button class="btn-update-cart">CẬP NHẬT GIỎ HÀNG</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Luxe Diamond</h3>
+                <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+                <p>Điện thoại: 19001393</p>
+                <p>Email: cskh@luxediamond.com</p>
+            </div>
+            <div class="footer-policy">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#" class="underline-hover">Bảo hành sản phẩm</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách bán hàng</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách giao hàng</a></li>
+                    <li><a href="#" class="underline-hover">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#" class="underline-hover">Điều khoản dịch vụ</a></li>
+                    <li><a href="#" class="underline-hover">Hệ thống cửa hàng</a></li>
+                    <li><a href="#" class="underline-hover">Câu hỏi thường gặp</a></li>
+                    <li><a href="#" class="underline-hover">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+    // Hàm định dạng số tiền VND
+    function formatCurrency(amount) {
+        return amount.toLocaleString('vi-VN') + ' VNĐ';
+    }
+
+    // Hàm cập nhật tổng tiền tạm tính của một sản phẩm
+    function updateItemTotal(quantity, pricePerUnit, totalElement) {
+        const newTotal = quantity * pricePerUnit;
+        totalElement.textContent = formatCurrency(newTotal);
+        updateCartTotals(); // Gọi hàm cập nhật tổng giỏ hàng mỗi khi tổng item thay đổi
+    }
+
+    // Hàm cập nhật tổng tiền toàn bộ giỏ hàng
+    function updateCartTotals() {
+        let overallSubtotal = 0;
+        const allCartItems = document.querySelectorAll('.cart-item');
+
+        allCartItems.forEach(cartItem => {
+            const qtyInput = cartItem.querySelector('.qty-input');
+            const itemPriceElement = cartItem.querySelector('.item-price');
+
+            // Đảm bảo lấy giá từ data-price
+            const quantity = parseInt(qtyInput.value);
+            const pricePerUnit = parseFloat(itemPriceElement.dataset.price);
+
+            if (!isNaN(quantity) && !isNaN(pricePerUnit)) {
+                overallSubtotal += (quantity * pricePerUnit);
+            }
+        });
+
+        // Cập nhật tổng tiền sản phẩm (subtotal)
+        const cartSubtotalElement = document.querySelector('.cart-subtotal');
+        if (cartSubtotalElement) {
+            cartSubtotalElement.textContent = formatCurrency(overallSubtotal);
+        }
+
+        // Hiện tại phí vận chuyển là miễn phí, nên tổng cộng = tổng tiền sản phẩm
+        const cartGrandTotalElement = document.querySelector('.cart-grand-total');
+        if (cartGrandTotalElement) {
+            cartGrandTotalElement.textContent = formatCurrency(overallSubtotal);
+        }
+    }
+
+    // --- Chức năng Xóa sản phẩm ---
+    // Gắn sự kiện cho các nút remove
+    document.querySelectorAll('.remove-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const cartItem = this.closest('.cart-item');
+            if (cartItem) {
+                cartItem.remove();
+                updateCartTotals(); // Cập nhật tổng tiền sau khi xóa sản phẩm
+            }
+        });
+    });
+
+    // --- Chức năng Tăng/Giảm số lượng sản phẩm ---
+    document.querySelectorAll('.quantity-control').forEach(control => {
+        const minusBtn = control.querySelector('.minus');
+        const plusBtn = control.querySelector('.plus');
+        const qtyInput = control.querySelector('.qty-input');
+        const itemPriceElement = control.closest('.cart-item').querySelector('.item-price');
+        const itemTotalElement = control.closest('.cart-item').querySelector('.item-total');
+
+        // Lấy giá gốc từ thuộc tính data-price
+        const initialPrice = parseFloat(itemPriceElement.dataset.price);
+
+        minusBtn.addEventListener('click', () => {
+            let currentQty = parseInt(qtyInput.value);
+            if (currentQty > 1) {
+                qtyInput.value = currentQty - 1;
+                updateItemTotal(qtyInput.value, initialPrice, itemTotalElement);
+            }
+        });
+
+        plusBtn.addEventListener('click', () => {
+            let currentQty = parseInt(qtyInput.value);
+            qtyInput.value = currentQty + 1;
+            updateItemTotal(qtyInput.value, initialPrice, itemTotalElement);
+        });
+
+        qtyInput.addEventListener('change', () => {
+            let currentQty = parseInt(qtyInput.value);
+            if (isNaN(currentQty) || currentQty < 1) {
+                qtyInput.value = 1;
+            }
+            // Đảm bảo cập nhật tổng tiền item và giỏ hàng khi người dùng gõ số
+            updateItemTotal(qtyInput.value, initialPrice, itemTotalElement);
+        });
+    });
+
+    // --- Chức năng nút "Cập nhật giỏ hàng" ---
+    const updateCartButton = document.querySelector('.btn-update-cart');
+    if (updateCartButton) {
+        updateCartButton.addEventListener('click', function() {
+            updateCartTotals(); // Đảm bảo tổng tiền được cập nhật lại
+            alert('Giỏ hàng đã được cập nhật!'); // Thông báo cho người dùng
+        });
+    }
+    updateCartTotals();
+});
+    </script>
+</body>
+</html>
