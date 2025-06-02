@@ -270,6 +270,14 @@ position: absolute;
     text-align: left;
 }
 
+.item-column.product-info a {
+    flex: 3; /* Product info column takes more space */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    text-decoration: none;
+}
+
 .item-remove {
     margin-right: 15px;
 }
