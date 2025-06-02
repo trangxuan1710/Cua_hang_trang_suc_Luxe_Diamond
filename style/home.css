@@ -252,6 +252,7 @@ position: absolute;
 /* About */
 .about {
     display: flex;
+    flex-wrap: wrap;
     padding: 50px;
     align-items: center;
     background: rgb(224,224,219);
