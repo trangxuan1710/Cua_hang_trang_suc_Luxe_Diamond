@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về Luxe Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../style/image/LogoLuxeDiamond.png" alt="LogoLuxeDiamond">
+        </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                      <div class="menu-columns">
+                            <a href="#" class="underline-hover">Bộ sưu tập</a>  
+                        <div class="submenu">
+                            <a href="../sản phẩm/DazzlingDiamond.html" class="underline-hover">Dazzling Diamond</a>
+                            <a href="../sản phẩm/EnchantingLove.html" class="underline-hover">Enchanting Love</a> 
+                        </div>  
+                        </div>
+                        <div class="menu-columns">
+                            <a href="../sản phẩm/khuyentai.html" class="underline-hover">Khuyên tai</a>
+                            <a href="../sản phẩm/nhan.html" class="underline-hover">Nhẫn</a>
+                            <a href="../sản phẩm/Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                            <a href="../sản phẩm/sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                            <a href="../sản phẩm/vongco.html" class="underline-hover">Vòng cổ</a>
+                            <a href="../sản phẩm/vongtay.html" class="underline-hover">Vòng tay</a>
+                        </div>
+                    </div>
+                  </li>
+                <li class="dropdown">
+                    <a href="../gioithieu.html" class="underline-hover">Giới thiệu</a>
+                </li>
+                <li><a href="../Tintuc.html" class="underline-hover">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="../style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="login.html" class="icon">
+                <img src="../style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="giohang.html" class="icon" onclick="openCart()">
+                <img src="../style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+            </a>
+        </div>
+    </header>
+    <section class="about" style="background-color: #efeee9;">
+        <div class="about-text" style="background-color: #efeee9;">
+            <h2>Chính sách Đổi trả sản phẩm</h2>
+            <p>Tại <strong>Luxe Diamond</strong>, chúng tôi luôn nỗ lực mang đến sự hài lòng tuyệt đối cho quý khách hàng với mỗi sản phẩm trang sức. Chúng tôi hiểu rằng đôi khi quý khách có thể muốn thay đổi lựa chọn của mình. Vì vậy, chúng tôi cung cấp chính sách đổi trả minh bạch và linh hoạt để đảm bảo trải nghiệm mua sắm tốt nhất.</p>
+
+            <h3>1. Điều kiện Đổi trả</h3>
+            <p>Sản phẩm được chấp nhận đổi trả khi đáp ứng đầy đủ các điều kiện sau:</p>
+                <ul>
+                    <li>Sản phẩm còn nguyên vẹn, không bị trầy xước, móp méo, biến dạng, hoặc bất kỳ dấu hiệu hư hỏng nào do tác động bên ngoài sau khi đã rời khỏi cửa hàng hoặc đã được giao nhận thành công.</li>
+                    <li>Sản phẩm còn đầy đủ các phụ kiện đi kèm (nếu có), hóa đơn mua hàng gốc, phiếu bảo hành và giấy chứng nhận kim cương/đá quý.</li>
+                    <li>Sản phẩm chưa qua sử dụng, chưa qua chỉnh sửa, làm mới hoặc can thiệp bởi bất kỳ bên thứ ba nào không phải <strong>Luxe Diamond</strong>.</li>
+                    <li>Yêu cầu đổi trả được thực hiện trong thời gian quy định kể từ ngày nhận hàng.</li>
+                </ul>
+
+            <h3>2. Thời gian Đổi trả</h3>
+                <ul>
+                    <li><strong>Đối với đổi sản phẩm:</strong> Quý khách có thể yêu cầu đổi sản phẩm trong vòng <strong>07 ngày</strong> kể từ ngày nhận hàng.</li>
+                    <li><strong>Đối với trả sản phẩm và hoàn tiền:</strong> <strong>Luxe Diamond</strong> chỉ áp dụng chính sách hoàn tiền trong trường hợp sản phẩm có lỗi kỹ thuật từ nhà sản xuất được xác nhận bởi đội ngũ kỹ thuật của chúng tôi và không thể khắc phục được, hoặc sản phẩm không đúng với mô tả trên hóa đơn/website. Yêu cầu hoàn tiền cần được thực hiện trong vòng <strong>07 ngày</strong> kể từ ngày nhận hàng.</li>
+             </ul>
+
+            <h3>3. Quy định về Đổi sản phẩm</h3>
+                <ul>
+                    <li>Sản phẩm đổi phải có giá trị ngang bằng hoặc cao hơn sản phẩm ban đầu. Nếu giá trị sản phẩm đổi cao hơn, quý khách vui lòng thanh toán phần chênh lệch.</li>
+                    <li>Sản phẩm được đổi sẽ dựa trên giá trị niêm yết tại thời điểm đổi hàng.</li>
+                    <li>Mỗi sản phẩm chỉ được đổi một lần duy nhất.</li>
+                </ul>
+
+            <h3>4. Quy trình Đổi trả</h3>
+                <p>Khi có nhu cầu đổi trả sản phẩm, quý khách vui lòng thực hiện theo các bước sau:</p>
+                <ol>
+                    <li>Liên hệ bộ phận Chăm sóc khách hàng của <strong>Luxe Diamond</strong> qua hotline hoặc email để thông báo về yêu cầu đổi trả và cung cấp thông tin đơn hàng, tình trạng sản phẩm.</li>
+                    <li>Mang sản phẩm kèm đầy đủ hóa đơn, phiếu bảo hành và giấy chứng nhận (nếu có) đến cửa hàng <strong>Luxe Diamond</strong> gần nhất.</li>
+                    <li>Đội ngũ kỹ thuật viên của chúng tôi sẽ kiểm tra tình trạng sản phẩm để xác nhận đủ điều kiện đổi trả theo chính sách.</li>
+                    <li>Sau khi kiểm tra thành công, quý khách sẽ được hướng dẫn các bước tiếp theo để hoàn tất quá trình đổi trả.</li>
+                </ol>
+
+            <h3>5. Các trường hợp không áp dụng Đổi trả</h3>
+                <ul>
+                    <li>Sản phẩm đã qua sử dụng, bị trầy xước, hư hỏng do lỗi người dùng.</li>
+                    <li>Không có hóa đơn mua hàng gốc hoặc phiếu bảo hành hợp lệ.</li>
+                    <li>Yêu cầu đổi trả vượt quá thời gian quy định.</li>
+                    <li>Sản phẩm thuộc nhóm hàng không áp dụng đổi trả (ví dụ: sản phẩm thiết kế riêng, sản phẩm khuyến mãi đặc biệt có ghi chú không đổi trả).</li>
+                </ul>
+
+            <h3>6. Hoàn tiền (Nếu áp dụng)</h3>
+            <p>Trong các trường hợp được chấp nhận hoàn tiền (như đã nêu tại Mục 2), chúng tôi sẽ tiến hành hoàn tiền cho quý khách bằng phương thức chuyển khoản ngân hàng trong vòng <strong>05-07 ngày làm việc</strong> kể từ khi xác nhận sản phẩm đủ điều kiện hoàn tiền.</p>
+            <p>Mọi thắc mắc về chính sách đổi trả sản phẩm, quý khách vui lòng liên hệ bộ phận Chăm sóc khách hàng của <strong>Luxe Diamond</strong> để được giải đáp và hỗ trợ kịp thời.</p>
+        </div>
+    </section>
+    
+    
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-about">
+            <h3>Luxe Diamond</h3>
+            <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+            <p>Điện thoại: 19001393</p>
+            <p>Email: cskh@luxediamond.com</p>
+        </div>
+        <div class="footer-policy">
+            <h3>Chính sách</h3>
+            <ul>
+                <li><a href="../Chính sách/baohanh.html" class="underline-hover">Bảo hành sản phẩm</a></li>
+                <li><a href="../Chính sách/banhang.html" class="underline-hover">Chính sách bán hàng</a></li>
+                <li><a href="../Chính sách/giaohang.html" class="underline-hover">Chính sách giao hàng</a></li>
+                <li><a href="../Chính sách/doitra.html" class="underline-hover">Chính sách đổi trả</a></li>
+            </ul>
+        </div>
+        <div class="footer-support">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="../Hỗ trợ khách hàng/dieukhoan.html" class="underline-hover">Điều khoản dịch vụ</a></li>
+                <li><a href="#" class="underline-hover">Hệ thống cửa hàng</a></li>
+                <li><a href="../Hỗ trợ khách hàng/FAQ.html" class="underline-hover">Câu hỏi thường gặp</a></li>
+                <li><a href="#" class="underline-hover">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+    </div>
+</footer>
+<script>
+    let index = 0;
+    const slider = document.querySelector('.slider');
+    const totalSlides = slider.querySelectorAll('img').length;
+
+    setInterval(() => {
+        index = (index + 1) % totalSlides;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000);
+</script>
+</body>
+</html>

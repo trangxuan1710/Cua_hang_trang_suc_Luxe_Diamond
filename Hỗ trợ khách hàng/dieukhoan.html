@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về Luxe Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../style/image/LogoLuxeDiamond.png" alt="LogoLuxeDiamond">
+        </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                      <div class="menu-columns">
+                            <a href="#" class="underline-hover">Bộ sưu tập</a>  
+                        <div class="submenu">
+                            <a href="../sản phẩm/DazzlingDiamond.html" class="underline-hover">Dazzling Diamond</a>
+                            <a href="../sản phẩm/EnchantingLove.html" class="underline-hover">Enchanting Love</a> 
+                        </div>  
+                        </div>
+                        <div class="menu-columns">
+                            <a href="../sản phẩm/khuyentai.html" class="underline-hover">Khuyên tai</a>
+                            <a href="../sản phẩm/nhan.html" class="underline-hover">Nhẫn</a>
+                            <a href="../sản phẩm/Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                            <a href="../sản phẩm/sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                            <a href="../sản phẩm/vongco.html" class="underline-hover">Vòng cổ</a>
+                            <a href="../sản phẩm/vongtay.html" class="underline-hover">Vòng tay</a>
+                        </div>
+                    </div>
+                  </li>
+                <li class="dropdown">
+                    <a href="../gioithieu.html" class="underline-hover">Giới thiệu</a>
+                </li>
+                <li><a href="../Tintuc.html" class="underline-hover">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="../style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="login.html" class="icon">
+                <img src="../style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="giohang.html" class="icon" onclick="openCart()">
+                <img src="../style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+            </a>
+        </div>
+    </header>
+    <section class="about" style="background-color: #efeee9;">
+        <div class="about-text" style="background-color: #efeee9;">
+            <<h2>Điều khoản Dịch vụ</h2>
+            <p>Chào mừng quý khách đến với <strong>Luxe Diamond</strong>!<br>
+             Vui lòng đọc kỹ các Điều khoản Dịch vụ này trước khi truy cập hoặc sử dụng trang web và dịch vụ của chúng tôi.</p>
+            <p>Bằng việc truy cập hoặc sử dụng bất kỳ phần nào của trang web hoặc dịch vụ, quý khách đồng ý bị ràng buộc bởi các Điều khoản Dịch vụ này. Nếu quý khách không đồng ý với tất cả các điều khoản và điều kiện của thỏa thuận này, quý khách có thể không truy cập trang web hoặc sử dụng bất kỳ dịch vụ nào.</p>
+            
+            <h3>1. Quyền sở hữu trí tuệ</h3>
+            <ul>
+                <li>Tất cả nội dung có trên trang web này, bao gồm văn bản, hình ảnh, đồ họa, logo, biểu tượng, video, âm thanh và phần mềm, đều là tài sản của <strong>Luxe Diamond</strong> hoặc các nhà cung cấp nội dung của chúng tôi và được bảo vệ bởi luật pháp về bản quyền, nhãn hiệu và các quyền sở hữu trí tuệ khác.</li>
+                <li>Quý khách không được phép sao chép, tái tạo, phân phối, xuất bản, truyền tải, hiển thị, thực hiện, sửa đổi, tạo tác phẩm phái sinh, bán hoặc khai thác bất kỳ phần nào của nội dung này mà không có sự đồng ý trước bằng văn bản của <strong>Luxe Diamond</strong>.</li>
+            </ul>
+            
+            <h3>2. Sử dụng trang web</h3>
+            <ul>
+                <li>Quý khách đồng ý sử dụng trang web và dịch vụ của chúng tôi chỉ cho các mục đích hợp pháp và theo các Điều khoản Dịch vụ này.</li>
+                <li>Quý khách không được sử dụng trang web theo bất kỳ cách nào có thể gây hại, vô hiệu hóa, quá tải hoặc làm suy yếu trang web hoặc can thiệp vào việc sử dụng và tận hưởng trang web của bất kỳ bên nào khác.</li>
+                <li>Việc tạo tài khoản cá nhân trên website yêu cầu quý khách cung cấp thông tin chính xác, đầy đủ và cập nhật. Quý khách chịu trách nhiệm bảo mật thông tin tài khoản và mật khẩu của mình.</li>
+            </ul>
+            
+            <h3>3. Sản phẩm và Dịch vụ</h3>
+            <ul>
+                <li>Các sản phẩm và dịch vụ được cung cấp qua trang web có thể có số lượng hạn chế và chỉ có thể được trả lại hoặc đổi theo Chính sách Đổi trả của chúng tôi.</li>
+                <li>Chúng tôi đã nỗ lực hết sức để hiển thị chính xác nhất màu sắc và hình ảnh của sản phẩm xuất hiện tại cửa hàng. Chúng tôi không thể đảm bảo rằng màn hình máy tính của quý khách sẽ hiển thị chính xác bất kỳ màu sắc nào.</li>
+                <li>Chúng tôi có quyền, nhưng không có nghĩa vụ, giới hạn doanh số bán sản phẩm hoặc dịch vụ của chúng tôi cho bất kỳ người, khu vực địa lý hoặc khu vực pháp lý nào. Chúng tôi có thể thực hiện quyền này trên cơ sở từng trường hợp cụ thể.</li>
+            </ul>
+            
+            <h3>4. Giá cả và Thanh toán</h3>
+            <ul>
+                <li>Giá cho các sản phẩm của chúng tôi có thể thay đổi mà không cần báo trước.</li>
+                <li>Chúng tôi có quyền sửa đổi hoặc ngừng Dịch vụ (hoặc bất kỳ phần hoặc nội dung nào của Dịch vụ) bất kỳ lúc nào mà không cần thông báo.</li>
+                <li>Chúng tôi bảo lưu quyền từ chối bất kỳ đơn đặt hàng nào quý khách đặt với chúng tôi. Chúng tôi có thể, theo quyết định riêng của mình, giới hạn hoặc hủy bỏ số lượng mua cho mỗi người, mỗi hộ gia đình hoặc mỗi đơn hàng.</li>
+                <li>Tất cả các khoản thanh toán phải được thực hiện theo "Chính sách Bán hàng" và "Chính sách Giao hàng" của chúng tôi.</li>
+            </ul>
+            
+            <h3>5. Liên kết của bên thứ ba</h3>
+            <ul>
+                <li>Một số nội dung, sản phẩm và dịch vụ có sẵn thông qua Dịch vụ của chúng tôi có thể bao gồm tài liệu từ các bên thứ ba.</li>
+                <li>Các liên kết của bên thứ ba trên trang web này có thể dẫn quý khách đến các trang web của bên thứ ba không liên kết với chúng tôi. Chúng tôi không chịu trách nhiệm kiểm tra hoặc đánh giá nội dung hoặc độ chính xác và chúng tôi không đảm bảo và sẽ không có bất kỳ trách nhiệm hoặc nghĩa vụ nào đối với bất kỳ tài liệu hoặc trang web của bên thứ ba nào, hoặc đối với bất kỳ tài liệu, sản phẩm hoặc dịch vụ nào khác của bên thứ ba.</li>
+            </ul>
+            
+            <h3>6. Từ chối trách nhiệm và Giới hạn trách nhiệm</h3>
+            <ul>
+                <li>Chúng tôi không đảm bảo, đại diện hoặc bảo hành rằng việc quý khách sử dụng dịch vụ của chúng tôi sẽ không bị gián đoạn, kịp thời, an toàn hoặc không có lỗi.</li>
+                <li>Chúng tôi không đảm bảo rằng kết quả có thể thu được từ việc sử dụng dịch vụ sẽ chính xác hoặc đáng tin cậy.</li>
+                <li>Trong mọi trường hợp, <strong>Luxe Diamond</strong>, giám đốc, cán bộ, nhân viên, chi nhánh, đại lý, nhà thầu, thực tập sinh, nhà cung cấp dịch vụ hoặc người cấp phép của chúng tôi sẽ không chịu trách nhiệm pháp lý đối với bất kỳ thương tích, mất mát, khiếu nại hoặc bất kỳ thiệt hại trực tiếp, gián tiếp, ngẫu nhiên, trừng phạt, đặc biệt hoặc do hậu quả dưới bất kỳ hình thức nào, bao gồm nhưng không giới hạn ở mất lợi nhuận, mất doanh thu, mất tiết kiệm, mất dữ liệu, chi phí thay thế hoặc bất kỳ thiệt hại tương tự nào, cho dù dựa trên hợp đồng, sai phạm (bao gồm sơ suất), trách nhiệm nghiêm ngặt hoặc cách khác, phát sinh từ việc quý khách sử dụng bất kỳ dịch vụ hoặc bất kỳ sản phẩm nào được mua bằng dịch vụ, hoặc đối với bất kỳ khiếu nại nào khác liên quan đến việc quý khách sử dụng dịch vụ hoặc bất kỳ sản phẩm nào.</li>
+            </ul>
+            
+            <h3>7. Thay đổi Điều khoản Dịch vụ</h3>
+            <p>Quý khách có thể xem lại phiên bản mới nhất của Điều khoản Dịch vụ bất kỳ lúc nào tại trang này. Chúng tôi bảo lưu quyền, theo quyết định riêng của mình, cập nhật, thay đổi hoặc thay thế bất kỳ phần nào của các Điều khoản Dịch vụ này bằng cách đăng các bản cập nhật và thay đổi lên trang web của chúng tôi. Quý khách có trách nhiệm kiểm tra trang web của chúng tôi định kỳ để biết các thay đổi. Việc quý khách tiếp tục sử dụng hoặc truy cập trang web hoặc Dịch vụ của chúng tôi sau khi đăng bất kỳ thay đổi nào đối với các Điều khoản Dịch vụ này đồng nghĩa với việc quý khách chấp nhận các thay đổi đó.</p>
+        </div>
+    </section>
+    
+    
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-about">
+            <h3>Luxe Diamond</h3>
+            <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+            <p>Điện thoại: 19001393</p>
+            <p>Email: cskh@luxediamond.com</p>
+        </div>
+        <div class="footer-policy">
+            <h3>Chính sách</h3>
+            <ul>
+                <li><a href="../Chính sách/baohanh.html" class="underline-hover">Bảo hành sản phẩm</a></li>
+                <li><a href="../Chính sách/banhang.html" class="underline-hover">Chính sách bán hàng</a></li>
+                <li><a href="../Chính sách/giaohang.html" class="underline-hover">Chính sách giao hàng</a></li>
+                <li><a href="../Chính sách/doitra.html" class="underline-hover">Chính sách đổi trả</a></li>
+            </ul>
+        </div>
+        <div class="footer-support">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="../Hỗ trợ khách hàng/dieukhoan.html" class="underline-hover">Điều khoản dịch vụ</a></li>
+                <li><a href="#" class="underline-hover">Hệ thống cửa hàng</a></li>
+                <li><a href="../Hỗ trợ khách hàng/FAQ.html" class="underline-hover">Câu hỏi thường gặp</a></li>
+                <li><a href="#" class="underline-hover">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+    </div>
+</footer>
+<script>
+    let index = 0;
+    const slider = document.querySelector('.slider');
+    const totalSlides = slider.querySelectorAll('img').length;
+
+    setInterval(() => {
+        index = (index + 1) % totalSlides;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000);
+</script>
+</body>
+</html>

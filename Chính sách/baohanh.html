@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về Luxe Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../style/image/LogoLuxeDiamond.png" alt="LogoLuxeDiamond">
+        </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                      <div class="menu-columns">
+                            <a href="#" class="underline-hover">Bộ sưu tập</a>  
+                        <div class="submenu">
+                            <a href="../sản phẩm/DazzlingDiamond.html" class="underline-hover">Dazzling Diamond</a>
+                            <a href="../sản phẩm/EnchantingLove.html" class="underline-hover">Enchanting Love</a> 
+                        </div>  
+                        </div>
+                        <div class="menu-columns">
+                            <a href="../sản phẩm/khuyentai.html" class="underline-hover">Khuyên tai</a>
+                            <a href="../sản phẩm/nhan.html" class="underline-hover">Nhẫn</a>
+                            <a href="../sản phẩm/Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                            <a href="../sản phẩm/sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                            <a href="../sản phẩm/vongco.html" class="underline-hover">Vòng cổ</a>
+                            <a href="../sản phẩm/vongtay.html" class="underline-hover">Vòng tay</a>
+                        </div>
+                    </div>
+                  </li>
+                <li class="dropdown">
+                    <a href="../gioithieu.html" class="underline-hover">Giới thiệu</a>
+                </li>
+                <li><a href="../Tintuc.html" class="underline-hover">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="../style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="login.html" class="icon">
+                <img src="../style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="giohang.html" class="icon" onclick="openCart()">
+                <img src="../style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+            </a>
+        </div>
+    </header>
+    <section class="about" style="background-color: #efeee9;">
+        <div class="about-text" style="background-color: #efeee9;">
+            <h2>Chính sách Bảo hành sản phẩm</h2>
+                    <p>Tại <strong>Luxe Diamond</strong>, chúng tôi tự hào mang đến những sản phẩm trang sức kim cương và đá quý được chế tác tinh xảo với chất lượng vượt trội. Chúng tôi hiểu rằng mỗi sản phẩm là một tài sản giá trị và mang ý nghĩa đặc biệt đối với quý khách hàng. Vì vậy, <strong>Luxe Diamond</strong> cam kết cung cấp chính sách bảo hành rõ ràng, minh bạch và chu đáo để đảm bảo quyền lợi cũng như sự an tâm tuyệt đối khi quý khách tin tưởng lựa chọn sản phẩm của chúng tôi.</p>
+
+                <h3>1. Phạm vi và Thời gian bảo hành</h3>
+                    <ul>
+                        <li><strong>Đối với trang sức kim cương và đá quý gắn trên vàng, bạc, platin:</strong>
+                    <ul>
+                        <li>Bảo hành trọn đời đối với các lỗi kỹ thuật phát sinh từ quá trình sản xuất như: bung chấu, lỏng đá (đối với đá chủ và các viên đá tấm dưới 2.0 li), đứt mối hàn, rơi đá (đối với đá tấm), lỏng ổ khóa.</li>
+                        <li>Hỗ trợ đánh bóng, làm mới, vệ sinh trọn đời miễn phí cho tất cả các sản phẩm.</li>
+                    </ul>
+                        </li>
+                        <li><strong>Đối với trang sức không gắn đá hoặc trang sức chỉ vàng/bạc/platin:</strong>
+                     <ul>
+                        <li>Bảo hành trọn đời đối với các lỗi kỹ thuật: đứt mối hàn, gãy mối nối (không do va đập mạnh).</li>
+                        <li>Hỗ trợ đánh bóng, làm mới, vệ sinh trọn đời miễn phí.</li>
+                    </ul>
+                        </li>
+                        <li><strong>Đối với các sản phẩm đặc biệt khác:</strong> Thời gian và điều kiện bảo hành sẽ được ghi rõ trên phiếu bảo hành hoặc hóa đơn mua hàng.</li>
+                    </ul>
+
+                <h3>2. Điều kiện áp dụng bảo hành</h3>
+                    <p>Chính sách bảo hành chỉ được áp dụng khi sản phẩm đáp ứng các điều kiện sau:</p>
+            <ul>
+    <li>Sản phẩm phải được xuất trình kèm theo phiếu bảo hành hợp lệ hoặc hóa đơn mua hàng gốc của <strong>Luxe Diamond</strong>.</li>
+    <li>Sản phẩm còn nguyên vẹn, không có dấu hiệu bị tháo rời, sửa chữa hoặc can thiệp bởi bên thứ ba không phải <strong>Luxe Diamond</strong>.</li>
+    <li>Lỗi phát sinh phải là lỗi kỹ thuật do quá trình sản xuất hoặc vật liệu, không bao gồm các hư hại do tác động ngoại lực, sử dụng sai cách, tai nạn, bảo quản không đúng cách hoặc hao mòn tự nhiên theo thời gian.</li>
+    <li>Không bảo hành trong các trường hợp sản phẩm bị biến dạng, móp méo, đứt gãy, trầy xước nặng, sứt mẻ đá do va đập mạnh hoặc các tác động vật lý khác từ bên ngoài.</li>
+</ul>
+
+<h3>3. Quy trình bảo hành và thời gian xử lý</h3>
+<p>Khi có nhu cầu bảo hành, quý khách vui lòng mang sản phẩm cùng phiếu bảo hành/hóa đơn mua hàng đến bất kỳ cửa hàng nào của <strong>Luxe Diamond</strong>. Đội ngũ kỹ thuật viên của chúng tôi sẽ tiếp nhận, kiểm tra tình trạng sản phẩm và tư vấn cụ thể về phương án xử lý.</p>
+<p>Thời gian xử lý bảo hành sẽ tùy thuộc vào mức độ hư hỏng và tính chất của sản phẩm, chúng tôi sẽ thông báo cụ thể cho quý khách tại thời điểm tiếp nhận. Chúng tôi cam kết hoàn trả sản phẩm cho quý khách trong thời gian sớm nhất có thể mà vẫn đảm bảo chất lượng sau bảo hành.</p>
+
+<h3>4. Lưu ý quan trọng</h3>
+<ul>
+    <li>Quý khách vui lòng bảo quản phiếu bảo hành và hóa đơn mua hàng cẩn thận. Đây là cơ sở để chúng tôi thực hiện các dịch vụ bảo hành.</li>
+    <li>Chúng tôi khuyến khích quý khách nên kiểm tra và vệ sinh trang sức định kỳ tại <strong>Luxe Diamond</strong> để duy trì vẻ đẹp và độ bền của sản phẩm.</li>
+    <li>Mọi thắc mắc về chính sách bảo hành, quý khách vui lòng liên hệ bộ phận Chăm sóc khách hàng của <strong>Luxe Diamond</strong> để được hỗ trợ chi tiết.</li>
+</ul>
+<p><strong>Luxe Diamond</strong> luôn mong muốn mang lại sự hài lòng cao nhất cho quý khách hàng. Trân trọng cảm ơn quý khách đã tin tưởng và đồng hành cùng chúng tôi!</p>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Luxe Diamond</h3>
+                <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+                <p>Điện thoại: 19001393</p>
+                <p>Email: cskh@luxediamond.com</p>
+            </div>
+            <div class="footer-policy">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="../Chính sách/baohanh.html" class="underline-hover">Bảo hành sản phẩm</a></li>
+                    <li><a href="../Chính sách/banhang.html" class="underline-hover">Chính sách bán hàng</a></li>
+                    <li><a href="../Chính sách/giaohang.html" class="underline-hover">Chính sách giao hàng</a></li>
+                    <li><a href="../Chính sách/doitra.html" class="underline-hover">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="../Hỗ trợ khách hàng/dieukhoan.html" class="underline-hover">Điều khoản dịch vụ</a></li>
+                    <li><a href="#" class="underline-hover">Hệ thống cửa hàng</a></li>
+                    <li><a href="../Hỗ trợ khách hàng/FAQ.html" class="underline-hover">Câu hỏi thường gặp</a></li>
+                    <li><a href="#" class="underline-hover">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+        </div>
+    </footer>
+    <script>
+        let index = 0;
+        const slider = document.querySelector('.slider');
+        const totalSlides = slider.querySelectorAll('img').length;
+
+        setInterval(() => {
+            index = (index + 1) % totalSlides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000);
+    </script>
+</body>
+</html>

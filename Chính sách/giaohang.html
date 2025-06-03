@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về Luxe Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../style/image/LogoLuxeDiamond.png" alt="LogoLuxeDiamond">
+        </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                      <div class="menu-columns">
+                            <a href="#" class="underline-hover">Bộ sưu tập</a>  
+                        <div class="submenu">
+                            <a href="../sản phẩm/DazzlingDiamond.html" class="underline-hover">Dazzling Diamond</a>
+                            <a href="../sản phẩm/EnchantingLove.html" class="underline-hover">Enchanting Love</a> 
+                        </div>  
+                        </div>
+                        <div class="menu-columns">
+                            <a href="../sản phẩm/khuyentai.html" class="underline-hover">Khuyên tai</a>
+                            <a href="../sản phẩm/nhan.html" class="underline-hover">Nhẫn</a>
+                            <a href="../sản phẩm/Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                            <a href="../sản phẩm/sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                            <a href="../sản phẩm/vongco.html" class="underline-hover">Vòng cổ</a>
+                            <a href="../sản phẩm/vongtay.html" class="underline-hover">Vòng tay</a>
+                        </div>
+                    </div>
+                  </li>
+                <li class="dropdown">
+                    <a href="../gioithieu.html" class="underline-hover">Giới thiệu</a>
+                </li>
+                <li><a href="../Tintuc.html" class="underline-hover">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="../style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="login.html" class="icon">
+                <img src="../style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="giohang.html" class="icon" onclick="openCart()">
+                <img src="../style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+            </a>
+        </div>
+    </header>
+    <section class="about" style="background-color: #efeee9;">
+        <div class="about-text" style="background-color: #efeee9;">
+            <h2>Chính sách Giao hàng</h2>
+            <p>Tại <strong>Luxe Diamond</strong>, chúng tôi hiểu rằng việc nhận được sản phẩm một cách nhanh chóng và an toàn là vô cùng quan trọng đối với quý khách hàng. Chúng tôi cam kết cung cấp dịch vụ giao hàng chuyên nghiệp, đảm bảo mỗi món trang sức đến tay quý khách trong tình trạng hoàn hảo nhất.</p>
+
+            <h3>1. Phạm vi Giao hàng</h3>
+                <ul>
+                    <li><strong>Nội địa:</strong> <strong>Luxe Diamond</strong> thực hiện giao hàng trên toàn quốc, áp dụng cho tất cả các tỉnh thành tại Việt Nam.</li>
+                    <li><strong>Quốc tế:</strong> Đối với các đơn hàng quốc tế, quý khách vui lòng liên hệ trực tiếp với bộ phận Chăm sóc khách hàng của chúng tôi để được tư vấn về khả năng vận chuyển, chi phí và các quy định hải quan liên quan.</li>
+                </ul>
+
+            <h3>2. Phương thức và Đối tác Giao hàng</h3>
+            <p>Chúng tôi hợp tác với các đối tác vận chuyển uy tín và chuyên nghiệp để đảm bảo quá trình giao nhận được thực hiện một cách an toàn và hiệu quả nhất. Phương thức giao hàng cụ thể sẽ được lựa chọn dựa trên địa chỉ nhận hàng và giá trị đơn hàng để tối ưu hóa sự an toàn và tốc độ.</p>
+
+            <h3>3. Thời gian Giao hàng</h3>
+            <p>Thời gian giao hàng được tính từ khi đơn hàng được <strong>Luxe Diamond</strong> xác nhận và Thanh toán thành công:</p>
+                <ul>
+                    <li><strong>Nội thành Hà Nội và TP. Hồ Chí Minh:</strong> Giao hàng trong vòng 1-2 ngày làm việc.</li>
+                    <li><strong>Các tỉnh/thành phố khác:</strong> Giao hàng trong vòng 3-5 ngày làm việc, tùy thuộc vào địa điểm và điều kiện vận chuyển.</li>
+                    <li><strong>Đơn hàng thiết kế riêng/đặt theo yêu cầu:</strong> Thời gian giao hàng sẽ được thông báo cụ thể tại thời điểm xác nhận đơn hàng, tùy thuộc vào thời gian chế tác sản phẩm.</li>
+                </ul>
+            <p>Lưu ý: Thời gian giao hàng có thể thay đổi do các yếu tố khách quan như thiên tai, dịch bệnh, lễ tết, hoặc các vấn đề phát sinh từ phía đơn vị vận chuyển. Chúng tôi sẽ chủ động thông báo nếu có bất kỳ sự chậm trễ nào.</p>
+
+            <h3>4. Phí Giao hàng</h3>
+                <ul>
+                    <li>Phí giao hàng sẽ được tính toán dựa trên địa chỉ nhận hàng và trọng lượng/kích thước của sản phẩm. Mức phí cụ thể sẽ được hiển thị rõ ràng tại bước thanh toán trước khi quý khách xác nhận đơn hàng.</li>
+                    <li>Quý khách vui lòng thanh toán phí giao hàng cùng với giá trị sản phẩm khi thực hiện đặt hàng.</li>
+                </ul>
+
+            <h3>5. Yêu cầu Thanh toán trước khi Giao hàng</h3>
+            <p>Để đảm bảo an toàn và tính minh bạch cho mọi giao dịch, <strong>Luxe Diamond</strong> yêu cầu quý khách thanh toán đầy đủ giá trị đơn hàng (bao gồm cả phí sản phẩm và phí giao hàng) trước khi chúng tôi tiến hành đóng gói và giao sản phẩm.</p>
+            <p>Đơn hàng sẽ chỉ được xử lý và giao đi sau khi <strong>Luxe Diamond</strong> xác nhận đã nhận được khoản thanh toán đầy đủ.</p>
+
+            <h3>6. Kiểm tra và Nhận hàng</h3>
+                <ul>
+                    <li>Khi nhận hàng, quý khách vui lòng kiểm tra kỹ tình trạng bên ngoài của kiện hàng (đảm bảo còn nguyên vẹn, không có dấu hiệu bị cạy mở, rách) và đối chiếu với thông tin trên hóa đơn/phiếu giao hàng.</li>
+                    <li>Nếu có bất kỳ dấu hiệu bất thường nào (bao bì rách, móp méo, sản phẩm không đúng mẫu mã, số lượng), quý khách vui lòng từ chối nhận hàng và liên hệ ngay với bộ phận Chăm sóc khách hàng của <strong>Luxe Diamond</strong> để được hỗ trợ kịp thời.</li>
+                    <li>Sau khi quý khách đã ký xác nhận nhận hàng, <strong>Luxe Diamond</strong> sẽ không chịu trách nhiệm đối với các khiếu nại về tình trạng bên ngoài của sản phẩm.</li>
+                </ul>
+
+            <h3>7. Theo dõi Đơn hàng</h3>
+            <p>Sau khi đơn hàng được gửi đi, quý khách sẽ nhận được thông tin mã vận đơn (tracking number) qua email hoặc tin nhắn SMS (nếu có). Quý khách có thể sử dụng mã này để theo dõi tình trạng vận chuyển đơn hàng trên website của đối tác vận chuyển.</p>
+
+            <h3>8. Đơn hàng không thành công</h3>
+            <p>Trong trường hợp đơn hàng không thể giao thành công do lỗi từ phía người nhận (ví dụ: không liên hệ được, địa chỉ sai), đơn hàng có thể được lưu tại bưu cục hoặc được chuyển hoàn. Quý khách vui lòng liên hệ lại với <strong>Luxe Diamond</strong> để được hỗ trợ sắp xếp giao lại. Phí giao lại (nếu có) sẽ do quý khách chi trả.</p>
+            <p>Mọi thắc mắc về chính sách giao hàng, quý khách vui lòng liên hệ bộ phận Chăm sóc khách hàng của <strong>Luxe Diamond</strong> để được giải đáp.</p>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Luxe Diamond</h3>
+                <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+                <p>Điện thoại: 19001393</p>
+                <p>Email: cskh@luxediamond.com</p>
+            </div>
+            <div class="footer-policy">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="../Chính sách/baohanh.html" class="underline-hover">Bảo hành sản phẩm</a></li>
+                    <li><a href="../Chính sách/banhang.html" class="underline-hover">Chính sách bán hàng</a></li>
+                    <li><a href="../Chính sách/giaohang.html" class="underline-hover">Chính sách giao hàng</a></li>
+                    <li><a href="../Chính sách/doitra.html" class="underline-hover">Chính sách đổi trả</a></li>
+                </ul>
+            </div>
+            <div class="footer-support">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="../Hỗ trợ khách hàng/dieukhoan.html" class="underline-hover">Điều khoản dịch vụ</a></li>
+                    <li><a href="#" class="underline-hover">Hệ thống cửa hàng</a></li>
+                    <li><a href="../Hỗ trợ khách hàng/FAQ.html" class="underline-hover">Câu hỏi thường gặp</a></li>
+                    <li><a href="#" class="underline-hover">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+        </div>
+    </footer>
+    <script>
+        let index = 0;
+        const slider = document.querySelector('.slider');
+        const totalSlides = slider.querySelectorAll('img').length;
+
+        setInterval(() => {
+            index = (index + 1) % totalSlides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000);
+    </script>
+</body>
+</html>

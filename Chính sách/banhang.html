@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu về Luxe Diamond</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../style/image/LogoLuxeDiamond.png" alt="LogoLuxeDiamond">
+        </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html" class="underline-hover">Trang chủ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="underline-hover">Sản phẩm</a>
+                    <div class="dropdown-menu">
+                      <div class="menu-columns">
+                            <a href="#" class="underline-hover">Bộ sưu tập</a>  
+                        <div class="submenu">
+                            <a href="../sản phẩm/DazzlingDiamond.html" class="underline-hover">Dazzling Diamond</a>
+                            <a href="../sản phẩm/EnchantingLove.html" class="underline-hover">Enchanting Love</a> 
+                        </div>  
+                        </div>
+                        <div class="menu-columns">
+                            <a href="../sản phẩm/khuyentai.html" class="underline-hover">Khuyên tai</a>
+                            <a href="../sản phẩm/nhan.html" class="underline-hover">Nhẫn</a>
+                            <a href="../sản phẩm/Sanphambanchay.html" class="underline-hover">Sản phẩm bán chạy</a>
+                            <a href="../sản phẩm/sanphammoi.html" class="underline-hover">Sản phẩm mới</a>
+                            <a href="../sản phẩm/vongco.html" class="underline-hover">Vòng cổ</a>
+                            <a href="../sản phẩm/vongtay.html" class="underline-hover">Vòng tay</a>
+                        </div>
+                    </div>
+                  </li>
+                <li class="dropdown">
+                    <a href="../gioithieu.html" class="underline-hover">Giới thiệu</a>
+                </li>
+                <li><a href="../Tintuc.html" class="underline-hover">Tin tức</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-box">
+                <input type="text" style="width: auto;" placeholder="Tìm kiếm...">
+                <button onclick="searchProduct()">
+                    <img src="../style/image/timkiem.png" style="width: 20px; height: 20px;" alt="Tìm kiếm">
+                </button>
+            </div>
+            <a href="login.html" class="icon">
+                <img src="../style/image/taikhoan.jpg" style="width: 40px; height: 40px;" alt="Tài khoản">
+            </a>
+            <a href="giohang.html" class="icon" onclick="openCart()">
+                <img src="../style/image/giohang.png" style="width: 30px; height: 30px;" alt="Giỏ hàng">
+            </a>
+        </div>
+    </header>
+    <section class="about" style="background-color: #efeee9;">
+        <div class="about-text" style="background-color: #efeee9;">
+            <h2>Chính sách Bán hàng</h2>
+            <p>Tại <strong>Luxe Diamond</strong>, chúng tôi cam kết mang đến trải nghiệm mua sắm trang sức kim cương và đá quý trực tuyến cũng như tại cửa hàng một cách thuận tiện, an toàn và minh bạch nhất. Chính sách bán hàng này được thiết lập để đảm bảo quyền lợi của quý khách hàng và duy trì sự công bằng trong mọi giao dịch.</p>
+            
+            <h3>1. Thông tin sản phẩm và Giá cả</h3>
+            <ul>
+                <li><strong>Chất lượng và Mô tả:</strong> Tất cả sản phẩm được hiển thị trên website và tại cửa hàng đều được mô tả chi tiết về chất liệu, kích thước, trọng lượng, số lượng và chất lượng kim cương/đá quý (nếu có) theo đúng tiêu chuẩn kiểm định quốc tế (4Cs). Hình ảnh sản phẩm được chụp chân thực nhất có thể, tuy nhiên màu sắc thực tế có thể có sự khác biệt nhỏ do cài đặt màn hình hoặc ánh sáng.</li>
+                <li><strong>Giá niêm yết:</strong> Giá sản phẩm được niêm yết công khai trên website và tại cửa hàng, đã bao gồm thuế giá trị gia tăng (VAT) theo quy định của pháp luật Việt Nam, trừ khi có ghi chú khác. Giá có thể thay đổi mà không cần báo trước, nhưng chúng tôi sẽ thông báo rõ ràng về giá cuối cùng trước khi quý khách xác nhận đơn hàng.</li>
+            </ul>
+            
+            <h3>2. Quy trình đặt hàng</h3>
+            <ul>
+                <li><strong>Đặt hàng trực tuyến:</strong> Quý khách có thể lựa chọn sản phẩm trên website, thêm vào giỏ hàng và thực hiện các bước thanh toán theo hướng dẫn.</li>
+                <li><strong>Đặt hàng tại cửa hàng:</strong> Quý khách có thể đến trực tiếp hệ thống cửa hàng của Luxe Diamond để xem, tư vấn và mua sắm sản phẩm.</li>
+                <li><strong>Đặt hàng tùy chỉnh (Custom Order):</strong> Đối với các sản phẩm được thiết kế riêng hoặc đặt theo yêu cầu, chúng tôi sẽ có quy trình tư vấn, thiết kế, báo giá và đặt cọc riêng biệt được thỏa thuận rõ ràng với khách hàng.</li>
+            </ul>
+            
+            <h3>3. Phương thức thanh toán</h3>
+            <p><strong>Luxe Diamond</strong> hỗ trợ đa dạng các phương thức thanh toán để thuận tiện cho quý khách:</p>
+            <ul>
+                <li>Thanh toán tiền mặt tại cửa hàng.</li>
+                <li>Chuyển khoản ngân hàng.</li>
+                <li>Thanh toán qua các cổng thanh toán điện tử (Visa/MasterCard, ví điện tử) khi mua sắm trực tuyến.</li>
+                <li>Thanh toán trả góp (nếu có áp dụng và liên kết với các đối tác tài chính).</li>
+            </ul>
+            <p>Chi tiết về các phương thức và thông tin thanh toán sẽ được cung cấp rõ ràng tại bước thanh toán hoặc khi quý khách liên hệ tư vấn.</p>
+            
+            <h3>4. Xác nhận đơn hàng</h3>
+            <p>Sau khi quý khách hoàn tất việc đặt hàng và thanh toán (hoặc đặt cọc), <strong>Luxe Diamond</strong> sẽ gửi email hoặc tin nhắn xác nhận đơn hàng, bao gồm thông tin chi tiết về sản phẩm, giá cả, phương thức thanh toán, địa chỉ giao hàng và thời gian dự kiến. Quý khách vui lòng kiểm tra kỹ thông tin này.</p>
+            
+            <h3>5. Chính sách giao hàng</h3>
+            <p>Chúng tôi cung cấp dịch vụ giao hàng tận nơi trên toàn quốc. Chi tiết về phí giao hàng, thời gian giao hàng và quy trình nhận hàng sẽ được quy định cụ thể trong "Chính sách Giao hàng" riêng biệt.</p>
+            
+            <h3>6. Chính sách đổi trả và hoàn tiền</h3>
+            <p>Để đảm bảo quyền lợi của khách hàng, <strong>Luxe Diamond</strong> có chính sách đổi trả và hoàn tiền rõ ràng. Chi tiết về điều kiện, thời gian và quy trình đổi trả sẽ được quy định cụ thể trong "Chính sách Đổi trả sản phẩm" riêng biệt.</p>
+            
+            <h3>7. Hỗ trợ khách hàng</h3>
+            <p>Nếu quý khách có bất kỳ thắc mắc nào về sản phẩm, chính sách bán hàng, hoặc cần hỗ trợ trong quá trình mua sắm, vui lòng liên hệ với bộ phận Chăm sóc khách hàng
+        </div>
+    </section>
+    
+    
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-about">
+            <h3>Luxe Diamond</h3>
+            <p>Địa chỉ: 112 Nguyễn Trãi, Thanh Xuân, Hà Nội.</p>
+            <p>Điện thoại: 19001393</p>
+            <p>Email: cskh@luxediamond.com</p>
+        </div>
+        <div class="footer-policy">
+            <h3>Chính sách</h3>
+            <ul>
+                <li><a href="../Chính sách/baohanh.html" class="underline-hover">Bảo hành sản phẩm</a></li>
+                <li><a href="../Chính sách/banhang.html" class="underline-hover">Chính sách bán hàng</a></li>
+                <li><a href="../Chính sách/giaohang.html" class="underline-hover">Chính sách giao hàng</a></li>
+                <li><a href="../Chính sách/doitra.html" class="underline-hover">Chính sách đổi trả</a></li>
+            </ul>
+        </div>
+        <div class="footer-support">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="../Hỗ trợ khách hàng/dieukhoan.html" class="underline-hover">Điều khoản dịch vụ</a></li>
+                <li><a href="#" class="underline-hover">Hệ thống cửa hàng</a></li>
+                <li><a href="../Hỗ trợ khách hàng/FAQ.html" class="underline-hover">Câu hỏi thường gặp</a></li>
+                <li><a href="#" class="underline-hover">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
+    </div>
+</footer>
+<script>
+    let index = 0;
+    const slider = document.querySelector('.slider');
+    const totalSlides = slider.querySelectorAll('img').length;
+
+    setInterval(() => {
+        index = (index + 1) % totalSlides;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000);
+</script>
+</body>
+</html>
