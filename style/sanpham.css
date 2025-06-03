@@ -408,19 +408,32 @@ position: absolute;
 /* Màn hình trung bình (tablet) - từ 769px đến 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     .header {
-        padding: 15px 30px;
+        flex-direction: column; /* Giữ logo, menu, icons xếp chồng */
+        padding: 15px 20px;
+        align-items: flex-start;
     }
 
     .header .logo img {
         width: 70px;
     }
 
+    .header .nav ul {
+        flex-direction: row; /* THAY ĐỔI QUAN TRỌNG: Menu ngang trên điện thoại */
+        flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu quá dài */
+        justify-content: center; /* Căn giữa các mục menu con */
+        gap: 10px; /* Khoảng cách giữa các mục */
+        width: 100%;
+    }
+
     .header .nav ul li {
-        margin: 0 10px;
+        margin: 0 5px; /* Giảm margin giữa các mục */
+        text-align: center;
+        flex-shrink: 0; /* Ngăn các mục co lại quá nhiều */
     }
 
     .header .nav ul li a {
-        font-size: 16px;
+        font-size: 16px; /* Giảm kích thước font cho phù hợp */
+        padding: 8px 10px; /* Thêm padding để dễ bấm */
     }
 
     .header-icons {
