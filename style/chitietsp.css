@@ -486,74 +486,70 @@ button.contact:hover {
 }
 /* ...existing code... */
 
-/* Responsive cho chi tiết sản phẩm và các thành phần chính */
-@media (max-width: 1200px) {
+/* Responsive cho tablet */
+@media (max-width: 1024px) {
+    .header, .footer {
+        padding: 15px 20px;
+    }
     .container {
         flex-direction: column;
-        align-items: stretch;
-        gap: 20px;
+        gap: 15px;
         padding: 10px;
     }
-    .image-container, .thumbnail-container, .details {
-        width: 100%;
-        max-width: 100%;
+    .products {
+        gap: 15px;
     }
     .product {
         width: 45%;
-    }
-}
-
-@media (max-width: 900px) {
-    .header {
-        flex-direction: column;
-        padding: 15px 10px;
-    }
-    .header .logo img {
-        width: 70px;
-        height: 70px;
-    }
-    .header .nav ul {
-        flex-direction: column;
-        gap: 10px;
+        padding: 15px;
     }
     .footer-content {
         flex-direction: column;
         gap: 20px;
     }
-    .product {
-        width: 90%;
-        margin: 0 auto 20px auto;
-    }
-    .products {
-        gap: 15px;
-    }
 }
 
-@media (max-width: 600px) {
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5px;
+    }
+    .header .logo img {
+        width: 70px;
+        height: 70px;
+    }
+    /* Sửa lại menu luôn ngang */
+    .header .nav ul {
+        flex-direction: row !important;
+        gap: 10px;
+    }
     .container {
         flex-direction: column;
         gap: 10px;
         padding: 5px;
     }
-    .image-container img,
-    #main-image {
+    .image-container img, #main-image {
         max-width: 100%;
         width: 100%;
+    }
+    .thumbnail-container {
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
     }
     .thumbnail {
         width: 60px;
         height: 60px;
     }
-    .details {
-        font-size: 16px;
-        padding: 0 5px;
+    .products {
+        flex-direction: column;
+        gap: 10px;
     }
     .product {
         width: 100%;
         padding: 10px;
-    }
-    .footer {
-        padding: 15px 5px;
     }
     .footer-content {
         flex-direction: column;
@@ -565,33 +561,40 @@ button.contact:hover {
     .footer-bottom {
         font-size: 12px;
     }
-    .header-icons img,
-    .icon img {
-        width: 20px !important;
-        height: 20px !important;
-    }
-    .search-box input {
-        width: 100px;
-    }
-}
-
-/* Đảm bảo các nút và input không bị tràn trên mobile */
-@media (max-width: 480px) {
-    .quantity-control button,
-    .quantity-control input {
-        width: 32px;
-        height: 32px;
-        font-size: 14px;
-    }
-    .phanloai-buttons button {
-        padding: 4px 10px;
-        font-size: 13px;
+    .details {
+        font-size: 15px;
     }
     .details .price {
         font-size: 18px;
     }
-    .menu {
-        padding: 10px 5px;
-        font-size: 16px;
+    .phanloai-buttons button {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    button.add-to-cart, button.contact {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .quantity-control button, .quantity-control input {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .quantity-control input {
+        width: 40px;
+    }
+}
+
+/* Responsive cho màn hình rất nhỏ */
+@media (max-width: 480px) {
+    .header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .footer {
+        padding: 5px;
+    }
+    .footer-content h3 {
+        font-size: 15px;
     }
 }
