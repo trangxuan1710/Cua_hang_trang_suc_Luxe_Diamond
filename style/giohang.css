@@ -535,3 +535,217 @@ position: absolute;
 .footer-content ul li a:hover {
     color: #c19b76;
 }
+
+/* --- Responsive Adjustments (Media Queries) --- */
+
+/* Màn hình nhỏ (điện thoại) - dưới 768px */
+@media (max-width: 768px) {
+    /* Header adjustments (from previous iterations) */
+    .header {
+        flex-direction: column; /* Giữ logo, menu, icons xếp chồng */
+        padding: 15px 20px;
+        align-items: flex-start;
+    }
+
+    .header .logo img {
+        width: 70px;
+    }
+
+    .header .nav ul {
+        flex-direction: row; /* THAY ĐỔI QUAN TRỌNG: Menu ngang trên điện thoại */
+        flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu quá dài */
+        justify-content: center; /* Căn giữa các mục menu con */
+        gap: 10px; /* Khoảng cách giữa các mục */
+        width: 100%;
+    }
+
+    .header .nav ul li {
+        margin: 0 5px; /* Giảm margin giữa các mục */
+        text-align: center;
+        flex-shrink: 0; /* Ngăn các mục co lại quá nhiều */
+    }
+
+    .header .nav ul li a {
+        font-size: 16px; /* Giảm kích thước font cho phù hợp */
+        padding: 8px 10px; /* Thêm padding để dễ bấm */
+    }
+
+    .header-icons {
+        gap: 10px;
+    }
+
+    .search-box input {
+        width: 120px;
+    }
+    .search-box input:focus {
+        width: 180px;
+    }
+
+    .dropdown-menu {
+        min-width: 400px;
+        padding: 15px;
+    }
+
+    .menu-columns {
+        padding: 0 10px;
+    }
+
+    /* Product Grid Adjustments for 2 products per row */
+    .products {
+        padding: 20px 10px;
+        gap: 10px; /* Giảm gap để có không gian cho 2 cột */
+    }
+
+    .product {
+        width: calc(50% - 5px) !important; /* 2 sản phẩm trên 1 hàng, tính toán dựa trên gap 10px */
+        max-width: calc(50% - 5px) !important;
+        padding: 15px;
+    }
+
+    /* Cart Container Adjustments */
+    .cart-container {
+        padding: 15px;
+        margin: 20px auto;
+        width: 95%; /* Take more width on small screens */
+    }
+
+    .cart-container h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    /* Hide cart header on mobile for cleaner look */
+    .cart-header {
+        display: none;
+    }
+
+    .cart-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align content to the left */
+        padding: 15px 0;
+        gap: 10px; /* Space between stacked elements */
+    }
+
+    .item-remove {
+        width: auto; /* Let it shrink */
+        margin-right: 0;
+        margin-bottom: 10px; /* Space below remove button */
+    }
+
+    .item-column.product-info {
+        flex-direction: column; /* Stack image and details */
+        align-items: flex-start;
+        text-align: left;
+        width: 100%; /* Take full width */
+        padding-left: 0; /* Remove padding */
+    }
+
+    .item-image {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 10px; /* Space below image */
+    }
+
+    .item-details {
+        width: 100%; /* Take full width */
+        text-align: left;
+    }
+
+    .item-price,
+    .item-total {
+        width: 100%; /* Take full width */
+        text-align: left; /* Align price/total to left */
+        font-size: 1em;
+        margin-top: 5px; /* Space above price/total */
+    }
+
+    .item-quantity {
+        width: 100%; /* Take full width */
+        justify-content: flex-start; /* Align quantity control to left */
+        margin-top: 5px;
+    }
+
+    .quantity-control {
+        margin: 0; /* Remove auto margin */
+    }
+
+    .cart-summary {
+        width: 100%; /* Summary takes full width */
+        align-items: center; /* Center summary rows */
+    }
+
+    .cart-summary-row {
+        width: 90%; /* Summary rows take most width */
+        font-size: 1em;
+    }
+
+    .cart-footer-actions {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Space between buttons */
+    }
+
+    .btn-continue-shopping,
+    .btn-update-cart {
+        width: 100%; /* Buttons take full width */
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Màn hình trung bình (tablet) - từ 769px đến 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .header .logo img {
+        width: 70px;
+    }
+
+    .header .nav ul li {
+        margin: 0 10px;
+    }
+
+    .header .nav ul li a {
+        font-size: 16px;
+    }
+
+    .header-icons {
+        gap: 10px;
+    }
+
+    .search-box input {
+        width: 120px;
+    }
+    .search-box input:focus {
+        width: 180px;
+    }
+
+    .dropdown-menu {
+        min-width: 400px;
+        padding: 15px;
+    }
+
+    .menu-columns {
+        padding: 0 10px;
+    }
+
+    .products {
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .product {
+        width: 45%; /* 2 cột trên tablet */
+    }
+
+    .footer {
+        padding: 20px 30px;
+    }
+}

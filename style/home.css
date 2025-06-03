@@ -418,5 +418,10 @@ position: absolute;
     .collection-item {
     flex-direction: column;
     }
+
+    .footer-content {
+        flex-direction: column; /* Footer xếp dọc */
+        align-items: flex-start;
+    }
 }
     
