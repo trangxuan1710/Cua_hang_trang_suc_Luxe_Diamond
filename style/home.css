@@ -332,7 +332,8 @@ position: absolute;
     flex-direction: row;
     justify-content: space-between;
     padding: 50px;
-    gap: 30px;
+    gap: auto;
+    min-gap: 20px;
 }
 
 .item {
