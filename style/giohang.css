@@ -585,41 +585,6 @@ position: absolute;
         width: 150px;
     }
 
-    /* Dropdown trên mobile (có thể cần js để toggle) */
-    .dropdown-menu {
-        position: static; /* Không dùng absolute trên mobile nếu menu chính là cột dọc */
-        width: 100%;
-        min-width: unset;
-        box-shadow: none;
-        padding: 10px;
-        transform: none;
-        opacity: 1; /* Luôn hiển thị nếu được kích hoạt bằng JS */
-        visibility: visible;
-        border-top: 1px solid #333; /* Thêm border để phân biệt */
-    }
-
-    .menu-columns {
-        width: 100%;
-        border-right: none;
-        padding: 0;
-        margin-bottom: 10px;
-    }
-    .menu-columns a {
-        padding: 8px 0;
-    }
-
-    .submenu {
-        position: static; /* Không dùng absolute trên mobile */
-        width: 100%;
-        min-width: unset;
-        box-shadow: none;
-        padding: 10px;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
-        border-top: 1px solid #333;
-        margin-top: 5px;
-    }
     /* Product Grid Adjustments for 2 products per row */
     .products {
         padding: 20px 10px;
@@ -729,7 +694,7 @@ position: absolute;
 
 
 /* Màn hình trung bình (tablet) - từ 769px đến 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 800px) and (max-width: 1024px) {
     .header {
         padding: 15px 30px;
     }
@@ -755,15 +720,6 @@ position: absolute;
     }
     .search-box input:focus {
         width: 180px;
-    }
-
-    .dropdown-menu {
-        min-width: 400px;
-        padding: 15px;
-    }
-
-    .menu-columns {
-        padding: 0 10px;
     }
 
     .products {

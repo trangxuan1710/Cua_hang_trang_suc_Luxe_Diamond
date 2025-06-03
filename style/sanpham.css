@@ -356,42 +356,6 @@ position: absolute;
         width: 150px;
     }
 
-    /* Dropdown trên mobile (có thể cần js để toggle) */
-    .dropdown-menu {
-        position: static; /* Không dùng absolute trên mobile nếu menu chính là cột dọc */
-        width: 100%;
-        min-width: unset;
-        box-shadow: none;
-        padding: 10px;
-        transform: none;
-        opacity: 1; /* Luôn hiển thị nếu được kích hoạt bằng JS */
-        visibility: visible;
-        border-top: 1px solid #333; /* Thêm border để phân biệt */
-    }
-
-    .menu-columns {
-        width: 100%;
-        border-right: none;
-        padding: 0;
-        margin-bottom: 10px;
-    }
-    .menu-columns a {
-        padding: 8px 0;
-    }
-
-    .submenu {
-        position: static; /* Không dùng absolute trên mobile */
-        width: 100%;
-        min-width: unset;
-        box-shadow: none;
-        padding: 10px;
-        transform: none;
-        opacity: 1;
-        visibility: visible;
-        border-top: 1px solid #333;
-        margin-top: 5px;
-    }
-
     .products {
         padding: 20px 10px;
         gap: 20px;
