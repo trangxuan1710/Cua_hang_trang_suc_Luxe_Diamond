@@ -510,20 +510,85 @@ button.contact:hover {
 }
 
 /* Responsive cho mobile */
-@media (max-width: 768px) {
-    .header, .footer {
-        flex-direction: column;
+@media (max-width: 800px) {
+    .header {
+        flex-direction: row; /* Xếp header theo cột */
+        padding: 15px 20px;
         align-items: flex-start;
-        padding: 10px 5px;
+        flex-wrap: wrap;
     }
-    .header .logo img {
-        width: 70px;
-        height: 70px;
+
+    .header .logo {
+        margin-bottom: 15px;
     }
-    /* Sửa lại menu luôn ngang */
+
+    .nav {
+        width: 100%; /* Menu chiếm toàn bộ chiều rộng */
+        justify-content: flex-start; /* Căn trái menu */
+        margin-bottom: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .header .nav ul {
-        flex-direction: row !important;
-        gap: 10px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .header .nav ul li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .header-icons {
+        width: 100%;
+        justify-content: space-around; /* Căn đều các icon */
+        margin-left: 0;
+    }
+
+    .search-box input {
+        width: 95px; /* Thu nhỏ input search */
+        padding: 6px 10px;
+    }
+    .search-box input:focus {
+        width: 150px;
+    }
+
+    /* Dropdown trên mobile (có thể cần js để toggle) */
+    .dropdown-menu {
+        position: static; /* Không dùng absolute trên mobile nếu menu chính là cột dọc */
+        width: 100%;
+        min-width: unset;
+        box-shadow: none;
+        padding: 10px;
+        transform: none;
+        opacity: 1; /* Luôn hiển thị nếu được kích hoạt bằng JS */
+        visibility: visible;
+        border-top: 1px solid #333; /* Thêm border để phân biệt */
+    }
+
+    .menu-columns {
+        width: 100%;
+        border-right: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .menu-columns a {
+        padding: 8px 0;
+    }
+
+    .submenu {
+        position: static; /* Không dùng absolute trên mobile */
+        width: 100%;
+        min-width: unset;
+        box-shadow: none;
+        padding: 10px;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        border-top: 1px solid #333;
+        margin-top: 5px;
     }
     .container {
         flex-direction: column;

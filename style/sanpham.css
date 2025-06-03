@@ -311,7 +311,7 @@ position: absolute;
 /* --- Responsive Adjustments (Media Queries) --- */
 
 /* Màn hình nhỏ (điện thoại) - dưới 768px */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .header {
         flex-direction: row; /* Xếp header theo cột */
         padding: 15px 20px;
@@ -349,7 +349,7 @@ position: absolute;
     }
 
     .search-box input {
-        width: 100px; /* Thu nhỏ input search */
+        width: 95px; /* Thu nhỏ input search */
         padding: 6px 10px;
     }
     .search-box input:focus {

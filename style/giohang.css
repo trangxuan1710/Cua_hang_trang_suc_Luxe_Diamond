@@ -538,58 +538,88 @@ position: absolute;
 
 /* --- Responsive Adjustments (Media Queries) --- */
 
-/* Màn hình nhỏ (điện thoại) - dưới 768px */
-@media (max-width: 768px) {
+/* Màn hình nhỏ (điện thoại)
+@media (max-width: 800px) {
     /* Header adjustments (from previous iterations) */
     .header {
-        flex-direction: column; /* Giữ logo, menu, icons xếp chồng */
+        flex-direction: row; /* Xếp header theo cột */
         padding: 15px 20px;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
-    .header .logo img {
-        width: 70px;
+    .header .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav {
+        width: 100%; /* Menu chiếm toàn bộ chiều rộng */
+        justify-content: flex-start; /* Căn trái menu */
+        margin-bottom: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .header .nav ul {
-        flex-direction: row; /* THAY ĐỔI QUAN TRỌNG: Menu ngang trên điện thoại */
-        flex-wrap: wrap; /* Cho phép các mục xuống dòng nếu quá dài */
-        justify-content: center; /* Căn giữa các mục menu con */
-        gap: 10px; /* Khoảng cách giữa các mục */
         width: 100%;
+        flex-direction: row;
     }
 
     .header .nav ul li {
-        margin: 0 5px; /* Giảm margin giữa các mục */
-        text-align: center;
-        flex-shrink: 0; /* Ngăn các mục co lại quá nhiều */
-    }
-
-    .header .nav ul li a {
-        font-size: 16px; /* Giảm kích thước font cho phù hợp */
-        padding: 8px 10px; /* Thêm padding để dễ bấm */
+        margin: 5px 0;
+        width: 100%;
+        text-align: left;
     }
 
     .header-icons {
-        gap: 10px;
+        width: 100%;
+        justify-content: space-around; /* Căn đều các icon */
+        margin-left: 0;
     }
 
     .search-box input {
-        width: 120px;
+        width: 95px; /* Thu nhỏ input search */
+        padding: 6px 10px;
     }
     .search-box input:focus {
-        width: 180px;
+        width: 150px;
     }
 
+    /* Dropdown trên mobile (có thể cần js để toggle) */
     .dropdown-menu {
-        min-width: 400px;
-        padding: 15px;
+        position: static; /* Không dùng absolute trên mobile nếu menu chính là cột dọc */
+        width: 100%;
+        min-width: unset;
+        box-shadow: none;
+        padding: 10px;
+        transform: none;
+        opacity: 1; /* Luôn hiển thị nếu được kích hoạt bằng JS */
+        visibility: visible;
+        border-top: 1px solid #333; /* Thêm border để phân biệt */
     }
 
     .menu-columns {
-        padding: 0 10px;
+        width: 100%;
+        border-right: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .menu-columns a {
+        padding: 8px 0;
     }
 
+    .submenu {
+        position: static; /* Không dùng absolute trên mobile */
+        width: 100%;
+        min-width: unset;
+        box-shadow: none;
+        padding: 10px;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        border-top: 1px solid #333;
+        margin-top: 5px;
+    }
     /* Product Grid Adjustments for 2 products per row */
     .products {
         padding: 20px 10px;
@@ -696,7 +726,7 @@ position: absolute;
         flex-direction: column;
         align-items: flex-start;
     }
-}
+
 
 /* Màn hình trung bình (tablet) - từ 769px đến 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
