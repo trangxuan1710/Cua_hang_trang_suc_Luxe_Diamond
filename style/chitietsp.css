@@ -484,3 +484,114 @@ button.contact:hover {
 .footer-content ul li a:hover {
     color: #c19b76;
 }
+/* ...existing code... */
+
+/* Responsive cho chi tiết sản phẩm và các thành phần chính */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 10px;
+    }
+    .image-container, .thumbnail-container, .details {
+        width: 100%;
+        max-width: 100%;
+    }
+    .product {
+        width: 45%;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+    .header .logo img {
+        width: 70px;
+        height: 70px;
+    }
+    .header .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .product {
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+    .products {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px;
+    }
+    .image-container img,
+    #main-image {
+        max-width: 100%;
+        width: 100%;
+    }
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+    .details {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+    .product {
+        width: 100%;
+        padding: 10px;
+    }
+    .footer {
+        padding: 15px 5px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-content h3 {
+        font-size: 18px;
+    }
+    .footer-bottom {
+        font-size: 12px;
+    }
+    .header-icons img,
+    .icon img {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .search-box input {
+        width: 100px;
+    }
+}
+
+/* Đảm bảo các nút và input không bị tràn trên mobile */
+@media (max-width: 480px) {
+    .quantity-control button,
+    .quantity-control input {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    .phanloai-buttons button {
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+    .details .price {
+        font-size: 18px;
+    }
+    .menu {
+        padding: 10px 5px;
+        font-size: 16px;
+    }
+}
