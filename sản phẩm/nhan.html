@@ -156,5 +156,15 @@
             <p>&copy; Bản quyền thuộc về LUXE DIAMOND | Cung cấp bởi Haravan</p>
         </div>
     </footer>
+    <script>
+        let index = 0;
+        const slider = document.querySelector('.slider');
+        const totalSlides = slider.querySelectorAll('img').length;
+
+        setInterval(() => {
+            index = (index + 1) % totalSlides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000);
+    </script>
 </body>
 </html>
