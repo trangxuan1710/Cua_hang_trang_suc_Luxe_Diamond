@@ -398,9 +398,11 @@ position: absolute;
     }
 
     .product {
-        width: 90%; /* Sản phẩm chiếm gần hết chiều rộng */
+        width: calc(50% - 10px); /* Đặt chiều rộng để 2 sản phẩm trên 1 hàng, trừ gap */
+        max-width: calc(50% - 10px); /* Đảm bảo không vượt quá */
         padding: 15px;
     }
+
 
     .footer-content {
         flex-direction: column; /* Footer xếp dọc */
