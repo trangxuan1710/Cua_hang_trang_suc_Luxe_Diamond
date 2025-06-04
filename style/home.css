@@ -370,7 +370,8 @@ position: absolute;
 }
 
 .about-img img {
-    max-width: 60%;
+    max-width: 90%;
+    border-radius: 10%;
 }
 
 /* Items */

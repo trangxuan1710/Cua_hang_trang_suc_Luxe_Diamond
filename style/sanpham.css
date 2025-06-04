@@ -26,10 +26,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 5px 10px;
     background: #000000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: min-content;
 }
 
 .nav {
@@ -86,9 +89,9 @@ body {
 }
 
 .header .logo img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
 }
 
 .header .nav ul {
