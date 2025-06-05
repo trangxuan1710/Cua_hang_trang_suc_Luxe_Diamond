@@ -55,7 +55,7 @@ body {
 .nav {
     flex: 1;
     display: flex; /* Đảm bảo nav là flex container */
-    justify-content: center; /* Căn giữa menu */
+    justify-content: left; /* Căn giữa menu */
 }
 
 .header .nav ul {
